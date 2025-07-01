@@ -1,0 +1,111 @@
+/* Container */
+.main {
+  background-color: #f9f9f9;
+  padding: 60px 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Two main rows */
+.main-1,
+.main-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+/* Columns */
+.main-left,
+.main-right {
+  flex: 1;
+  padding: 20px;
+  min-width: 250px;
+}
+
+/* "About RIT" badge */
+.logo {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid #264087;
+  border-radius: 50px;
+  color: #264087;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Heading */
+.head {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+/* Subcontent */
+.m-content {
+  font-size: 1.1rem;
+  color: #666;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* Website button */
+.web-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #264087;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.web-btn:hover {
+  background-color: transparent;
+  border: 2px solid #264087;
+  color: #264087;
+}
+
+/* Arrow styling inside button */
+.arrow {
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+/* Right side image  */
+.main-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-1,
+  .main-2 {
+    flex-direction: column;
+  }
+
+  .main-left,
+  .main-right {
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
+
+  .head {
+    font-size: 1.4rem;
+  }
+
+  .m-content {
+    font-size: 1rem;
+  }
+}
