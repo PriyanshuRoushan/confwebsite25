@@ -1,0 +1,139 @@
+/* SECTION */
+.faculties-section {
+  padding: 50px 0;
+  background: linear-gradient(to right, #e6f0ff, #f5faff);
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* HEADING */
+.faculties-heading {
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #1e3a8a;
+}
+
+/* SCROLL WRAPPER */
+.faculties-slider-wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  padding: 0 60px;
+}
+
+/* GRID */
+.faculties-grid {
+  display: flex;
+  gap: 30px;
+  width: max-content;
+  animation: scroll-left 60s linear infinite; /* 👈 AUTOSCROLL */
+}
+
+/* AUTOSCROLL ANIMATION */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* CARD */
+.faculties-card {
+  width: 200px;
+  text-align: center;
+  padding: 20px;
+  flex-shrink: 0;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faculties-card:hover {
+  transform: translateY(-8px);
+}
+
+/* IMAGE */
+.faculties-image {
+  width: 140px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* NAME */
+.faculties-name {
+    font-style: Bold;
+  font-size: 18px;
+  font-weight: 620;
+  color: #2c3e50;
+  margin: 10px 0 5px;
+}
+
+/* TITLE */
+.faculties-position {
+  font-weight: 500;
+  font-size: 14px;
+  color: #555;
+}
+
+/* ARROWS */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-btn.left {
+  left: 10px;
+}
+
+.scroll-btn.right {
+  right: 10px;
+}
+
+.scroll-btn:hover {
+  background-color: #153173;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .faculties-slider-wrapper {
+    padding: 0 30px;
+  }
+
+  .faculties-card {
+    width: 160px;
+    padding: 15px;
+  }
+
+  .faculties-image {
+    width: 120px;
+    height: 150px;
+  }
+
+  .faculties-name {
+    font-size: 16px;
+  }
+
+  .faculties-position {
+    font-size: 13px;
+  }
+}

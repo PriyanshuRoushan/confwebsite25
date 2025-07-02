@@ -1,42 +1,32 @@
 // src/data/speakersData.js
 import AmitAgarwal from '../assets/speakers/Dr Amit Agarwal.png';
-import Vidit from "../assets/speakers/Dr Vidit Vats.png"
-import Gauravchaturvadi from "../assets/speakers/Mr Gaurav Chaturvedi.png"
-import Rajeev from "../assets/speakers/Prof (Dr) Rajeev Kumar.png"
 import Rakesh from "../assets/speakers/Prof Dr Rakesh K Dwivedi.png"
+import Amitkumar from "../assets/speakers/Dr Amit Kumar Bansal.png"
 
 
-const speakers = [
+const speakerData = [
   {
     name: 'Dr. Amit Agarwal',
     image: AmitAgarwal,
-    title: 'Professor, IIT Kanpur',
+    title: <p><div>Director<br></br>ITG Gopeshwar</div></p>,
     topic: 'Computational Engineering'
   },
-  {
-    name: 'Dr Vidit Vats',
-    image: Vidit,
-    title: 'Scientist, NASA',
-    topic: 'Astrodynamics'
-  },
-  {
-    name: 'Prof (Dr) Rajeev Kumar',
-    image: Rajeev,
-    title: 'Scientist, NASA',
-    topic: 'Astrodynamics'
-  },
+
   {
     name: 'Prof (Dr) Rakesh K Dwivedi',
     image: Rakesh,
-    title: 'Scientist, NASA',
+    title: <p><div>Director<br></br>TMU Moradabad</div></p>,
     topic: 'Astrodynamics'
   },
   {
-    name: 'Mr. Gaurav Chaturvadi',
-    image: Gauravchaturvadi,
-    title: 'AI Expert, Google',
-    topic: 'Generative AI'
-  }
+      name: 'Dr Amit Kumar Bansal',
+      image: Amitkumar,
+      title: <p><div>Director<br>
+      </br>KSVCEM, Bijnor
+          </div></p>,
+      topic: 'Astrodynamics'
+    },
 ];
 
-export default speakers;
+export default speakerData;
+

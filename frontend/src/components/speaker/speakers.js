@@ -1,20 +1,28 @@
-import React from 'react'
-import Speakersdata from './speakerdata'
+import React from 'react';
+import speakerData from './speakerdata';
+import './speaker.css';
 
 const Speakers = () => {
   return (
-    <div className='main'>
-      <div className="txt">
-      </div>
-      <div className="speaker">
-        <div className="person">
-        </div>
-        <div className="person-detail">
+    <section className="speakers-section">
+      <h2 className="speakers-heading">Plenary Speakers</h2>
 
-        </div>
+      <div className="speaker-grid">
+        {speakerData.map((speaker, index) => (
+          <div className="speaker-card" key={index}>
+            <img
+              src={speaker.image}
+              alt={speaker.name}
+              className="speaker-image"
+            />
+            <h3 className="speaker-name">{speaker.name}</h3>
+            <p className="speaker-position">{speaker.title}</p>
+          </div>
+        ))}
       </div>
-    </div>
-  )
-}
 
-export default Speakers
+    </section>
+  );
+};
+
+export default Speakers;
