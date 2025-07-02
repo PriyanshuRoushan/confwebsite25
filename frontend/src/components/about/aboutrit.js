@@ -6,6 +6,21 @@ import galleryImage2 from '../assets/images/gallery2.png';
 const AboutRit = () => {
   return (
     <div className="main" id='about-rit'>
+    <div className="main-2">
+        <div className="main-left">
+        </div>
+        <div className="main-right">
+            <div className="logo">
+                About ICETAPCI - 2025
+            </div>
+            <div className="head">
+
+            </div>
+            <div className="m-content">
+
+            </div>
+        </div>
+    </div>
     <div className="main-1">
         <div className="main-left">
             <div className="logo">
@@ -27,21 +42,6 @@ const AboutRit = () => {
         </div>
         <div className="main-right">
            <img src={galleryImage} alt="RIT Campus" />
-        </div>
-    </div>
-    <div className="main-2">
-        <div className="main-left">
-        </div>
-        <div className="main-right">
-            <div className="logo">
-                About ICETAPCI - 2025
-            </div>
-            <div className="head">
-
-            </div>
-            <div className="m-content">
-
-            </div>
         </div>
     </div>
     </div>

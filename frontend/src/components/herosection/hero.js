@@ -1,6 +1,8 @@
 import React from 'react';
 import './hero.css';
 import bgImage from '../assets/images/bf.png';
+import CountdownDaysOnly from '../countdown/CountdownDaysOnly';
+
 
 const Hero = () => {
   const heroStyle = {
@@ -19,6 +21,9 @@ const Hero = () => {
         <div className="hero-left">
           <h1 className="hero-title">International Conference on Emerging Technologies in Applied Engineering and Computational Intelligence <br />(ICETAPCI-2025)</h1>
           <h2 className="hero-subtitle">2nd International Conference</h2>
+          
+          <CountdownDaysOnly deadline="2025-08-30" />
+        
         </div>
         <div className="hero-right">
           <div className="hero-cta">
@@ -29,7 +34,7 @@ const Hero = () => {
               REGISTER NOW <span className="arrow">→</span>
             </a>
           </div>
-          <p className="registration-note">Registrations open till July 31, 2025</p>
+          <p className="registration-note">Registrations open till August 30, 2025</p>
           <div className="event-details-bottom">
             <br /><br />
             <p className="date">xx-xx-2025</p>

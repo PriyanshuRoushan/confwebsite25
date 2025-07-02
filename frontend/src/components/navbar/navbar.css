@@ -100,3 +100,58 @@
 .nav-item a:hover::after {
   width: 100%;
 }
+/* Mobile menu icon */
+.mobile-menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  right: 20px;
+  top: 22px;
+}
+
+.mobile-menu-icon .bar {
+  height: 3px;
+  width: 25px;
+  background-color: #333;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* Responsive rules */
+@media (max-width: 768px) {
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    flex-direction: column;
+    display: none;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    z-index: 999;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .navbar-main {
+    position: relative;
+  }
+
+  .mobile-menu-icon {
+    display: flex;
+  }
+
+  /* Optional: center items for mobile */
+  .nav-menu a {
+    padding: 10px 0;
+  }
+}

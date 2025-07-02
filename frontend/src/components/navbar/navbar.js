@@ -3,9 +3,11 @@ import './navbar.css';
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState('Home');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleLinkClick = (linkName) => {
     setActiveLink(linkName);
+    setIsMobileMenuOpen(false); // Close menu after clicking
   };
 
   return (
@@ -15,8 +17,17 @@ const Navbar = () => {
           icetapci.2025@ritroorkee.com
           <a href="/register" className="waiver-link">Submit Your Application Today!</a>
         </div>
+
         <div className="navbar-main">
-          <ul className="nav-menu">
+          {/* Hamburger Icon */}
+          <div className="mobile-menu-icon" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </div>
+
+          {/* Navigation Menu */}
+          <ul className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
             <li className={`nav-item ${activeLink === 'Home' ? 'active' : ''}`}>
               <a href="/" onClick={() => handleLinkClick('Home')}>Home</a>
             </li>
