@@ -5,11 +5,11 @@
 }
 
 .speakers-heading {
-  font-size: 32px;
+  font-size:2.5rem;
   text-align: center;
-  font-weight: bold;
-  margin-bottom: 30px;
-  color: #1e3a8a;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #264087;
 }
 
 .speaker-grid {
@@ -20,12 +20,13 @@
 }
 
 .speaker-card {
-  width: 200px;
+  width: 250px;
   text-align: center;
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: #fff;
   border-radius: 12px;
+  border: 2px solid #264087;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
@@ -34,8 +35,10 @@
 }
 
 .speaker-image {
-  width: 140px;
-  height: 180px;
+  background-color: #264087;
+  border: 4px solid #264087;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
@@ -44,13 +47,14 @@
 
 .speaker-name {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   color: #2c3e50;
   margin: 10px 0 5px;
 }
 
 .speaker-position {
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 1rem;
   color: #555;
 }
 
