@@ -38,10 +38,14 @@ const Navbar = () => {
               <a href="#call-for-paper" onClick={() => handleLinkClick('Call')}>Call for Paper</a>
             </li>
             <li className={`nav-item ${activeLink === 'Speakers' ? 'active' : ''}`}>
-              <a href="/speakers" onClick={() => handleLinkClick('Speakers')}>Speakers</a>
+            <a
+              href="#" onClick={(e) => {document.getElementById('speakers')?.scrollIntoView({ behavior: 'smooth' });
+                handleLinkClick('Speakers'); 
+              }}>Speakers
+            </a>
             </li>
             <li className={`nav-item ${activeLink === 'Schedule' ? 'active' : ''}`}>
-              <a href="/schedule" onClick={() => handleLinkClick('Schedule')}>Schedule</a>
+              <a href="#schedule" onClick={() => handleLinkClick('Schedule')}>Schedule</a>
             </li>
           </ul>
         </div>
