@@ -5,7 +5,7 @@ import './speaker.css';
 const Speakers = () => {
   return (
     <section className="speakers-section">
-      <h2 className="speakers-heading">Plenary Speakers</h2>
+      <h2 className="speakers-heading">Our Speakers</h2>
 
       <div className="speaker-grid">
         {speakerData.map((speaker, index) => (

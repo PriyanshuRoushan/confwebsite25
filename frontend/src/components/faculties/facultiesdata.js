@@ -25,7 +25,7 @@ const FacultiesData = [
     title: 'Conference Chair',
   },
    {
-    name: <div style={{ fontSize: "16px" }}>Mr. Munendra Singh Chauhan</div>,
+    name: <div style={{ fontSize: "14.5px" }}>Mr. Munendra Singh Chauhan</div>,
     image: Munendra,
     title: 'Finance Chair',
   },

@@ -5,6 +5,7 @@
 }
 
 .speakers-heading {
+  font-family: roboto;
   font-size:2.5rem;
   text-align: center;
   font-weight: 700;
@@ -20,6 +21,7 @@
 }
 
 .speaker-card {
+  font-family: roboto;
   width: 290px;
   text-align: center;
   padding: 20px;

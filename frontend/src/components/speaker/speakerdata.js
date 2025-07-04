@@ -14,7 +14,7 @@ const speakerData = [
 
   {
     name: 'Prof (Dr) Rakesh K Dwivedi',
-    image: Rakesh,
+    image : Rakesh,
     title: <p><div>Director<br></br>TMU Moradabad</div></p>,
     topic: 'Astrodynamics'
   },

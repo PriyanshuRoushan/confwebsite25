@@ -14,9 +14,9 @@ function App() {
       <Navbar/>
       <Hero/>
       <AboutRit/>
+      <Tracks />
       <Speakers/>
       <Faculties />
-      <Tracks />
     </div>
   );
 }
