@@ -32,20 +32,25 @@ const Navbar = () => {
               <a href="/" onClick={() => handleLinkClick('Home')}>Home</a>
             </li>
             <li className={`nav-item ${activeLink === 'About' ? 'active' : ''}`}>
-              <a href="#about-rit" onClick={() => handleLinkClick('About')}>About</a>
+            <a href="#" onClick={(e) => { e.preventDefault(); 
+            document.getElementById('about-rit')?.scrollIntoView({ behavior: 'smooth' });
+            handleLinkClick('About');}}>About</a>
             </li>
             <li className={`nav-item ${activeLink === 'Call' ? 'active' : ''}`}>
               <a href="#call-for-paper" onClick={() => handleLinkClick('Call')}>Call for Paper</a>
             </li>
-            <li className={`nav-item ${activeLink === 'Speakers' ? 'active' : ''}`}>
-            <a
-              href="#" onClick={(e) => {document.getElementById('speakers')?.scrollIntoView({ behavior: 'smooth' });
-                handleLinkClick('Speakers'); 
-              }}>Speakers
-            </a>
+            <li className={`nav-item ${activeLink === 'Speaker' ? 'active' : ''}`}>
+            <a href="#" onClick={(e) => { e.preventDefault(); 
+            document.getElementById('speakers')?.scrollIntoView({ behavior: 'smooth' });
+            handleLinkClick('Speakers');}}>Speakers</a>
             </li>
             <li className={`nav-item ${activeLink === 'Schedule' ? 'active' : ''}`}>
               <a href="#schedule" onClick={() => handleLinkClick('Schedule')}>Schedule</a>
+            </li>
+            <li className={`nav-item ${activeLink === 'Tracks' ? 'active' : ''}`}>
+            <a href="#" onClick={(e) => { e.preventDefault(); 
+            document.getElementById('main-tracks')?.scrollIntoView({ behavior: 'smooth' });
+            handleLinkClick('Tracks');}}>Tracks</a>
             </li>
           </ul>
         </div>
