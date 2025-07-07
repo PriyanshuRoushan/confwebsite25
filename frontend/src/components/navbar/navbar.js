@@ -45,7 +45,9 @@ const Navbar = () => {
             handleLinkClick('Speakers');}}>Speakers</a>
             </li>
             <li className={`nav-item ${activeLink === 'Schedule' ? 'active' : ''}`}>
-              <a href="#schedule" onClick={() => handleLinkClick('Schedule')}>Schedule</a>
+            <a href="#" onClick={(e) => { e.preventDefault(); 
+            document.getElementById('main-schedule')?.scrollIntoView({ behavior: 'smooth' });
+            handleLinkClick('Schedule');}}>Schedules</a>
             </li>
             <li className={`nav-item ${activeLink === 'Tracks' ? 'active' : ''}`}>
             <a href="#" onClick={(e) => { e.preventDefault(); 
