@@ -5,6 +5,9 @@ import "./schedule.css";
 function Schedule() {
     return(
     <div id="main-schedule">
+          <br></br>
+          <br></br>
+          <br></br>
           <h1 className="title">Rules for submission</h1>
           <p className="schedule-head">Paper submission date:- --/--/2025</p>
           <p className="schedule-head">Acceptance Notification:- --/--/2025</p>
