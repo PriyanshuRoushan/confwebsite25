@@ -5,7 +5,7 @@ import Description from "./description";
 function Tracks() {
   const [showAll, setShowAll] = useState(false);
 
-  const visibleTracks = showAll ? Description : Description.slice(0, 4);
+  const visibleTracks = showAll ? Description : Description.slice(0, 3);
 
   return (
     <div className="tracks-container" id="main-tracks">
