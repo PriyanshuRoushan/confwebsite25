@@ -7,6 +7,7 @@ import Faculties from './components/faculties/faculties';
 import Tracks from './components/tracks/tracks';
 // import Schedule from './components/schedule/schedule';
 import CallForPaper from './components/callforpaper/call4Paper';
+import Location from './components/location/location';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Faculties />
       {/* <Schedule /> */}
       <CallForPaper/>
+      <Location />
     </div>
   );
 }
