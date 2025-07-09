@@ -5,7 +5,7 @@ import AboutRit from './components/about/aboutrit';
 import Speakers from './components/speaker/speakers';
 import Faculties from './components/faculties/faculties';
 import Tracks from './components/tracks/tracks';
-import Schedule from './components/schedule/schedule';
+// import Schedule from './components/schedule/schedule';
 import CallForPaper from './components/callforpaper/call4Paper';
 
 
@@ -18,7 +18,7 @@ function App() {
       <Tracks />
       <Speakers/>
       <Faculties />
-      <Schedule />
+      {/* <Schedule /> */}
       <CallForPaper/>
     </div>
   );

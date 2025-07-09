@@ -83,7 +83,7 @@ const CallForPaper = () => {
   return (
     <div>
       <header style={styles.header}>
-        IoT-SIU 2025 — Call for Paper
+        2025 — Call for Paper
       </header>
 
       <div style={styles.container}>
