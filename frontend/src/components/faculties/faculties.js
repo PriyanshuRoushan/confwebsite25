@@ -27,7 +27,7 @@ const Faculties = () => {
       </button>
 
       <section className="faculties-section">
-        <h2 className="faculties-heading">Organizing Committee</h2>
+        <h2 className="faculties-heading">Organizing Committee</h2><br></br>
         
         <div className="faculties-slider-wrapper" ref={scrollRef}>
           <div className="faculties-grid">

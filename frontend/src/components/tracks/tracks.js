@@ -9,7 +9,7 @@ function Tracks() {
 
   return (
     <div className="tracks-container" id="main-tracks">
-      <div className="title">Conference Scope</div>
+      <div className="title">Conference Scope</div><br></br><br></br>
 
       <div className="track-grid">
         {visibleTracks.map((track) => (
