@@ -9,9 +9,16 @@ import Prashant from "../assets/faculties/Dr Prashant.png"
 import Taresh from "../assets/faculties/Dr Taresh.png"
 import Munendra from "../assets/faculties/Mr Munendra .png"
 import Rajeev from "../assets/faculties/Prof Rajeev.png"
+import Deepak from "../assets/faculties/Deepak.png"
+
+
 
 const FacultiesData = [
-    
+    {
+    name: 'Deepak Arya',
+    image: Deepak,
+    title: 'Technical Chair',
+  },
   {
     name: 'Mr. Gaurav Chaturvadi',
     image: Gauravchaturvadi,
@@ -68,10 +75,6 @@ const FacultiesData = [
     title: 'Technical Program Chair',
   },
 
-//   {
-//     name: 'Dr. Deepak Arya',
-//    
-//   }
 ]
 
 export default FacultiesData;
