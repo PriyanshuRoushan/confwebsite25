@@ -50,7 +50,7 @@ const FacultiesData = [
       {
     name: 'Dr. Deepak Arya',
     image: Deepak,
-    title: 'Technical Program Chair',
+    title: <p><div>DEAN CSE<br></br>RIT ROORKEE<br></br>TECHNICAL PROGRAM CHAIR</div></p>,
   },
       {
     name: 'Prof (Dr) Rajeev Kumar',
@@ -90,7 +90,7 @@ const FacultiesData = [
      {
     name: 'Dr Taresh Singh',
     image: Taresh,
-    title: <p><div>ASSISTANT PROFESSOR<br></br>RIT ROORKEE<br></br>PUBLICATION CHAIR</div></p>,
+    title: <p><div>DEAN TRAINING<br></br>RIT ROORKEE<br></br>PUBLICATION CHAIR</div></p>,
   },
     {
     name: 'Dr Prashant Mishra',
