@@ -10,69 +10,97 @@ import Taresh from "../assets/faculties/Dr Taresh.png"
 import Munendra from "../assets/faculties/Mr Munendra .png"
 import Rajeev from "../assets/faculties/Prof Rajeev.png"
 import Deepak from "../assets/faculties/Deepak.png"
+import Parag from "../assets/faculties/Parag.png"
+import Nigam from "../assets/faculties/Nigam.png"
+import Fake from "../assets/faculties/Fake.png"
 
 
 
 const FacultiesData = [
     {
-    name: 'Deepak Arya',
+    name: 'Mr Naman Bansal',
+    image: Fake,
+    title: 'Patron',
+  },
+    {
+    name: 'Mr Yash Agarwal',
+    image: Fake,
+    title: 'Patron',
+  },
+   {
+    name: 'Prof. M. J. Nigam ',
+    image: Nigam,
+    title: <p><div>DIRECTOR GENERAL<br></br>RIT ROORKEE<br></br>CO-PATRON</div></p>,
+  },
+   {
+    name: 'Prof. Nitin Kumar Tripathi ',
+    image: Fake,
+    title: 'Co-Patron',
+  },
+    {
+    name: 'Prof. (Dr.) Parag Jain',
+    image: Parag,
+    title: <p><div>DIRECTOR<br></br>RIT ROORKEE<br></br>GENERAL CHAIR</div></p>,
+  },
+     {
+    name: <div style={{ fontSize: "18px" }}>Mr. Munendra Singh Chauhan</div>,
+    image: Munendra,
+    title: <p><div>REGISTRAR<br></br>RIT ROORKEE<br></br>FINANCE CHAIR</div></p>,
+  },
+      {
+    name: 'Dr. Deepak Arya',
     image: Deepak,
-    title: 'Technical Chair',
+    title: 'Technical Program Chair',
+  },
+      {
+    name: 'Prof (Dr) Rajeev Kumar',
+    image: Rajeev,
+    title: 'Technical Program Chair',
+  },
+    {
+    name: 'Dr Abhay Bhatia',
+    image: Abhaybhatia,
+    title: <p><div>DEAN R&D<br></br>RIT ROORKEE<br></br>CONVENOR</div></p>,
+  },
+       {
+    name: 'Dr Neeraj Kumar',
+    image: Neeraj,
+    title: <p><div>HOD APPLIED SCIENCE<br></br>RIT ROORKEE<br></br>CO-CONVENOR</div></p>,
   },
   {
     name: 'Mr. Gaurav Chaturvadi',
     image: Gauravchaturvadi,
-    title: 'Conference Chair',
+    title: <p><div>DEAN ACADEMICS<br></br>RIT ROORKEE<br></br>CONFERENCE CHAIR</div></p>,
   },
   {
     name: 'Dr. Lokesh Kumar',
     image: Lokesh,
-    title: 'Conference Chair',
-  },
-   {
-    name: <div style={{ fontSize: "14.5px" }}>Mr. Munendra Singh Chauhan</div>,
-    image: Munendra,
-    title: 'Finance Chair',
-  },
-  {
-    name: 'Dr Abhay Bhatia',
-    image: Abhaybhatia,
-    title: 'Convenor',
-  },
-     {
-    name: 'Dr Neeraj Kumar',
-    image: Neeraj,
-    title: 'Co-Convenor',
+    title: <p><div>HOD CSE<br></br>RIT ROORKEE<br></br>CONFERENCE CHAIR</div></p>,
   },
      {
     name: 'Dr Himanshu Gupta',
     image: Himanhsugupta,
-    title: 'Publication Chair',
+    title: <p><div>ASSISTANT PROFESSOR<br></br>RIT ROORKEE<br></br>PUBLICATION CHAIR</div></p>,
   },
      {
     name: 'Dr Vidit Vats',
     image: Vidit,
-    title: 'Publication Chair',
+    title: <p><div>ASSISTANT PROFESSOR<br></br>RIT ROORKEE<br></br>PUBLICATION CHAIR</div></p>,
   },
      {
     name: 'Dr Taresh Singh',
     image: Taresh,
-    title: 'Publication Chair',
+    title: <p><div>ASSISTANT PROFESSOR<br></br>RIT ROORKEE<br></br>PUBLICATION CHAIR</div></p>,
   },
     {
     name: 'Dr Prashant Mishra',
     image: Prashant,
-    title: 'Publicity Chair',
+    title: <p><div>ASSISTANT PROFESSOR<br></br>RIT ROORKEE<br></br>PUBLICITY CHAIR</div></p>,
   },
   {
     name: 'Dr Rashmi Gupta',
     image: Rashmi,
-    title: 'Publicity Chair',
-  },
-    {
-    name: 'Prof (Dr) Rajeev Kumar',
-    image: Rajeev,
-    title: 'Technical Program Chair',
+    title: <p><div>DEAN PDP<br></br>RIT ROORKEE<br></br>PUBLICITY CHAIR</div></p>,
   },
 
 ]

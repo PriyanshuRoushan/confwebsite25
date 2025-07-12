@@ -9,7 +9,6 @@ import Tracks from './components/tracks/tracks';
 import CallForPaper from './components/callforpaper/call4Paper';
 import Location from './components/location/location';
 
-
 function App() {
   return (
     <div>
@@ -17,10 +16,10 @@ function App() {
       <Hero/>
       <AboutRit/>
       <Tracks />
-      <Speakers/>
-      <Faculties />
       {/* <Schedule /> */}
       <CallForPaper/>
+       <Speakers/>
+      <Faculties />
       <Location />
     </div>
   );
