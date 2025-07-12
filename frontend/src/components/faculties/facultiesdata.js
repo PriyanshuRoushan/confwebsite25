@@ -20,12 +20,12 @@ const FacultiesData = [
     {
     name: 'Mr Naman Bansal',
     image: Fake,
-    title: 'Patron',
+    title: 'PATRON',
   },
     {
     name: 'Mr Yash Agarwal',
     image: Fake,
-    title: 'Patron',
+    title: 'PATRON',
   },
    {
     name: 'Prof. M. J. Nigam ',
@@ -35,7 +35,7 @@ const FacultiesData = [
    {
     name: 'Prof. Nitin Kumar Tripathi ',
     image: Fake,
-    title: 'Co-Patron',
+    title: 'CO-PATRON',
   },
     {
     name: 'Prof. (Dr.) Parag Jain',
