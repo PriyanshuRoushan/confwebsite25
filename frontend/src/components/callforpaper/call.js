@@ -10,3 +10,5 @@ const call = () => {
 }
 
 export default call
+
+// marked useless

@@ -6,7 +6,7 @@ import galleryImage2 from '../assets/images/gallery2.png';
 const AboutRit = () => {
   return (
     <div className="main" id='about-rit'>
-    <div className="main-2">
+    {/* <div className="main-2">
         <div className="main-left">
         </div>
         <div className="main-right">
@@ -20,7 +20,7 @@ const AboutRit = () => {
 
             </div>
         </div>
-    </div>
+    </div> */}
     <div className="main-1">
         <div className="main-left">
             <div className="logo">
