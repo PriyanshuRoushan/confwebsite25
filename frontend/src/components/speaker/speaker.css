@@ -1,56 +1,75 @@
-.speakers-section {
+.speaker-section {
   padding: 50px 20px;
- 
-  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  position: relative;
 }
 
-.speakers-heading {
+.speaker-heading {
   font-family: roboto;
-  font-size:2.5rem;
-  text-align: center;
-  font-weight: 700;
-  margin-bottom: 40px;
+  font-size: 2.5rem;
   color: #264087;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.speaker-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+/* Scrollable wrapper (last row) */
+.speaker-slider-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.speaker-slider-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .speaker-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: inline-flex;
   gap: 30px;
 }
 
 .speaker-card {
   font-family: roboto;
-  width: 290px;
-  text-align: center;
+  background-color: #ffffff;
   padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #fff;
-  border-radius: 12px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  flex-shrink: 0;
+  text-align: center;
+  transition: transform 0.3s ease;
   border: 2px solid #264087;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .speaker-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-5px);
 }
 
 .speaker-image {
   background-color: #264087;
-  border: 4px solid #264087;
-  width: 200px;
-  height: 200px;
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
   border-radius: 50%;
-  object-fit: cover;
   margin-bottom: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 4px solid blue;
 }
 
 .speaker-name {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 700;
-  color: #2c3e50;
+  color: #333;
   margin: 10px 0 5px;
 }
 
@@ -60,17 +79,41 @@
   color: #555;
 }
 
-.speakers-view-all {
-  text-align: center;
-  margin-top: 30px;
+@media (max-width: 768px) {
+  .speaker-card {
+    width: 180px;
+  }
+
+  .speaker-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .speaker-heading {
+    font-size: 2rem;
+  }
 }
 
-.speakers-view-all a {
-  color: #1e40af;
-  font-weight: 600;
-  text-decoration: none;
+/* 🔥 Animated Underline Below Each Row */
+.animated-line {
+  position: relative;
+  width: 25%;
+  height: 2px;
+  margin: -20px auto 40px auto;
+  overflow: hidden;
 }
 
-.speakers-view-all a:hover {
-  text-decoration: underline;
+.animated-line::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #264087;
+  transition: width 0.4s ease;
+}
+
+.speaker-row:hover + .animated-line::after {
+  width: 100%;
 }

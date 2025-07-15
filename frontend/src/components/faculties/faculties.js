@@ -5,59 +5,60 @@ import "./faculties.css";
 const Faculties = () => {
   const scrollRef = useRef(null);
 
-  const row1 = Facultiesdata.slice(0, 4);
-  const row2 = Facultiesdata.slice(4, 8);
-  const row3 = Facultiesdata.slice(8, 12);
-  const remaining = Facultiesdata.slice(12); // All others in horizontal scroll
+  // Row slices
+  const row1 = Facultiesdata.slice(0, 2);
+  const row2 = Facultiesdata.slice(2, 4);
+  const row3 = Facultiesdata.slice(4, 5);
+  const row4 = Facultiesdata.slice(5, 7);
+  const row5 = Facultiesdata.slice(7, 9);
+  const row6 = Facultiesdata.slice(9, 11);
+  const row7 = Facultiesdata.slice(11, 15);
+  const row8 = Facultiesdata.slice(15); // Remaining scrollable
+
+  const renderRow = (rowData, keyOffset = 0) => (
+    <div className="faculties-row">
+      {rowData.map((faculty, index) => (
+        <div className="faculties-card" key={index + keyOffset}>
+          <img src={faculty.image} alt={faculty.name} className="faculties-image" />
+          <h3 className="faculties-name">{faculty.name}</h3>
+          <p className="faculties-position">{faculty.title}</p>
+        </div>
+      ))}
+    </div>
+  );
 
   return (
     <div className="product-carousel">
       <section className="faculties-section">
         <h2 className="faculties-heading">Organizing Committee</h2><br />
 
-        {/* Row 1 */}
-        <div className="faculties-row">
-          {row1.map((faculty, index) => (
-            <div className="faculties-card" key={index}>
-              <img src={faculty.image} alt={faculty.name} className="faculties-image" />
-              <h3 className="faculties-name">{faculty.name}</h3>
-              <p className="faculties-position">{faculty.title}</p>
-            </div>
-          ))}
-        </div>
+        {renderRow(row1, 0)}
         <div className="animated-line" />
 
-        {/* Row 2 */}
-        <div className="faculties-row">
-          {row2.map((faculty, index) => (
-            <div className="faculties-card" key={index + 4}>
-              <img src={faculty.image} alt={faculty.name} className="faculties-image" />
-              <h3 className="faculties-name">{faculty.name}</h3>
-              <p className="faculties-position">{faculty.title}</p>
-            </div>
-          ))}
-        </div>
+        {renderRow(row2, 2)}
         <div className="animated-line" />
 
-        {/* Row 3 */}
-        <div className="faculties-row">
-          {row3.map((faculty, index) => (
-            <div className="faculties-card" key={index + 7}>
-              <img src={faculty.image} alt={faculty.name} className="faculties-image" />
-              <h3 className="faculties-name">{faculty.name}</h3>
-              <p className="faculties-position">{faculty.title}</p>
-            </div>
-          ))}
-        </div>
+        {renderRow(row3, 4)}
         <div className="animated-line" />
 
-        {/* Remaining in scrollable row */}
-        {remaining.length > 0 && (
+        {renderRow(row4, 5)}
+        <div className="animated-line" />
+
+        {renderRow(row5, 7)}
+        <div className="animated-line" />
+
+        {renderRow(row6, 9)}
+        <div className="animated-line" />
+
+        {renderRow(row7, 11)}
+        <div className="animated-line" />
+
+        {row8.length > 0 && (
           <>
             <div className="faculties-slider-wrapper" ref={scrollRef}>
               <div className="faculties-grid">
-                {remaining.map((faculty, index) => (
-                  <div className="faculties-card" key={index + 9}>
+                {row8.map((faculty, index) => (
+                  <div className="faculties-card" key={index + 15}>
                     <img src={faculty.image} alt={faculty.name} className="faculties-image" />
                     <h3 className="faculties-name">{faculty.name}</h3>
                     <p className="faculties-position">{faculty.title}</p>
