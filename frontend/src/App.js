@@ -8,6 +8,7 @@ import Tracks from './components/tracks/tracks';
 // import Schedule from './components/schedule/schedule';
 import CallForPaper from './components/callforpaper/call4Paper';
 import Location from './components/location/location';
+import Footer from './components/footer/footer'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
        <Speakers/>
       <Faculties />
       <Location />
+      <Footer/>
     </div>
   );
 }

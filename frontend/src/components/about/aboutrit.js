@@ -1,5 +1,7 @@
-import React from 'react';
-import './aboutrit.css';
+
+import React from 'react'
+import './aboutrit.css'
+
 import galleryImage from '../assets/images/gallery.jpg';
 
 const AboutRit = () => {

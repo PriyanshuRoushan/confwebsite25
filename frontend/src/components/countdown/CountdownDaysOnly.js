@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useEffect, useState } from 'react';
 import './countdown.css'; // Optional: for styling the box
 
@@ -11,6 +12,7 @@ const CountdownDaysOnly = ({ deadline }) => {
   };
 
   const [daysLeft, setDaysLeft] = useState(calculateDaysLeft());
+
 
   useEffect(() => {
     const timer = setInterval(() => {
