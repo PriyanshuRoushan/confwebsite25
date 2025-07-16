@@ -23,6 +23,9 @@ const AboutRit = () => {
     </div> */}
     <div className="main-1">
         <div className="main-left">
+
+            
+
             <div className="logo">
                 About RIT
             </div>

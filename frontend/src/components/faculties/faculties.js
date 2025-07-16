@@ -1,19 +1,18 @@
-import React, { useRef } from 'react';
 import Facultiesdata from "./facultiesdata";
 import "./faculties.css";
 
 const Faculties = () => {
-  const scrollRef = useRef(null);
+  
 
-  // Row slices
+  // Adjusted row slices
   const row1 = Facultiesdata.slice(0, 2);
   const row2 = Facultiesdata.slice(2, 4);
   const row3 = Facultiesdata.slice(4, 5);
   const row4 = Facultiesdata.slice(5, 7);
   const row5 = Facultiesdata.slice(7, 9);
   const row6 = Facultiesdata.slice(9, 11);
-  const row7 = Facultiesdata.slice(11, 15);
-  const row8 = Facultiesdata.slice(15); // Remaining scrollable
+  const row7 = Facultiesdata.slice(11, 14); // Now contains 3 cards
+  const row8 = Facultiesdata.slice(14, 17); // Last row with 3 cards
 
   const renderRow = (rowData, keyOffset = 0) => (
     <div className="faculties-row">
@@ -55,17 +54,7 @@ const Faculties = () => {
 
         {row8.length > 0 && (
           <>
-            <div className="faculties-slider-wrapper" ref={scrollRef}>
-              <div className="faculties-grid">
-                {row8.map((faculty, index) => (
-                  <div className="faculties-card" key={index + 15}>
-                    <img src={faculty.image} alt={faculty.name} className="faculties-image" />
-                    <h3 className="faculties-name">{faculty.name}</h3>
-                    <p className="faculties-position">{faculty.title}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            {renderRow(row8, 14)}
             <div className="animated-line" />
           </>
         )}
