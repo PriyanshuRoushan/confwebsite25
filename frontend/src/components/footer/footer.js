@@ -158,11 +158,11 @@ const ConferenceFooter = () => {
           <h3 style={styles.heading}>Quick Links<div style={styles.headingLine}></div></h3>
           <ul style={styles.linkList}>
             <li style={styles.linkItem}><a href="#home" style={styles.link}>Home</a></li>
+            <li style={styles.linkItem}><a href="#about" style={styles.link}>About</a></li>
             <li style={styles.linkItem}><a href="#cfp" style={styles.link}>Call for Papers</a></li>
             <li style={styles.linkItem}><a href="#speakers" style={styles.link}>Keynote Speakers</a></li>
             <li style={styles.linkItem}><a href="#schedule" style={styles.link}>Program Schedule</a></li>
             <li style={styles.linkItem}><a href="#tracks" style={styles.link}>Research Tracks</a></li>
-            <li style={styles.linkItem}><a href="#contact" style={styles.link}>Contact</a></li>
           </ul>
         </div>
 
