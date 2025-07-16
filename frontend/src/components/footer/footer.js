@@ -20,7 +20,7 @@ const ConferenceFooter = () => {
       gmail: 'harsh@example.com'
     },
     {
-      name: 'Priyanshiuu Roushan',
+      name: 'Priyanshu Roushan',
       linkedin: '#',
       instagram: '#',
       gmail: 'priyanshiuu@example.com'
