@@ -13,13 +13,15 @@ import Deepak from "../assets/faculties/Deepak.png"
 import Parag from "../assets/faculties/Parag.png"
 import Nigam from "../assets/faculties/Nigam.png"
 import Fake from "../assets/faculties/Fake.png"
+import Nitin from "../assets/faculties/Nitin.png"
+import Naman from "../assets/faculties/Naman.png"
 
 
 
 const FacultiesData = [
     {
     name: 'Mr. Naman Bansal',
-    image: Fake,
+    image: Naman,
     title: 'PATRON',
   },
     {
@@ -34,7 +36,7 @@ const FacultiesData = [
   },
    {
     name: 'Prof. Nitin Kumar Tripathi ',
-    image: Fake,
+    image: Nitin,
     title: 'CO-PATRON',
   },
     {
@@ -71,7 +73,7 @@ const FacultiesData = [
        {
     name: 'Dr. Neeraj Kumar',
     image: Neeraj,
-    title: <p><div>PROFESSOR<br></br>CO-CONVENOR<br></br>RIT ROORKEE</div></p>,
+    title: <p><div>CO-CONVENOR<br></br>PROFESSOR<br></br>RIT ROORKEE</div></p>,
   },
      {
     name: 'Dr. Himanshu Gupta',

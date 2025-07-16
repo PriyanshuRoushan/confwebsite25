@@ -1,9 +1,12 @@
+/* SECTION CONTAINER */
 .faculties-section {
   padding: 50px 20px;
   text-align: center;
   position: relative;
+  background-color: #f9f9f9;
 }
 
+/* SECTION HEADING */
 .faculties-heading {
   font-family: roboto;
   font-size: 2.5rem;
@@ -12,6 +15,7 @@
   font-weight: 700;
 }
 
+/* CARD ROW */
 .faculties-row {
   display: flex;
   justify-content: center;
@@ -20,7 +24,7 @@
   margin-bottom: 40px;
 }
 
-/* Scrollable wrapper (last row) */
+/* SCROLLABLE SLIDER WRAPPER (if needed for horizontal scroll) */
 .faculties-slider-wrapper {
   overflow-x: auto;
   overflow-y: hidden;
@@ -34,18 +38,20 @@
   display: none;
 }
 
+/* HORIZONTAL FLEX GROUP */
 .faculties-grid {
   display: inline-flex;
   gap: 30px;
 }
 
+/* INDIVIDUAL CARD */
 .faculties-card {
   font-family: roboto;
   background-color: #ffffff;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  width: 200px;
+  width: 220px;
   flex-shrink: 0;
   text-align: center;
   transition: transform 0.3s ease;
@@ -56,6 +62,7 @@
   transform: translateY(-5px);
 }
 
+/* IMAGE INSIDE CARD */
 .faculties-image {
   background-color: #264087;
   width: 140px;
@@ -66,6 +73,7 @@
   border: 4px solid blue;
 }
 
+/* TEXT */
 .faculties-name {
   font-size: 1.2rem;
   font-weight: 700;
@@ -79,14 +87,71 @@
   color: #555;
 }
 
-@media (max-width: 768px) {
+/* 🔥 Animated Underline */
+.animated-line {
+  position: relative;
+  width: 25%;
+  height: 2px;
+  margin: 0 auto 40px auto;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.animated-line::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #264087;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+.faculties-section:hover .animated-line::after {
+  transform: scaleX(1);
+}
+
+/* ====================== */
+/* ✅ RESPONSIVE FIXES */
+/* ====================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
   .faculties-card {
-    width: 180px;
+    width: 200px;
   }
 
   .faculties-image {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .faculties-heading {
+    font-size: 2.2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .faculties-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .faculties-image {
+    width: 110px;
+    height: 110px;
+  }
+
+  .faculties-name {
+    font-size: 1.1rem;
+  }
+
+  .faculties-position {
+    font-size: 0.95rem;
   }
 
   .faculties-heading {
@@ -94,26 +159,19 @@
   }
 }
 
-/* 🔥 Animated Underline Below Each Row */
-.animated-line {
-  position: relative;
-  width: 25%;
-  height: 2px;
-  margin: -20px auto 40px auto;
-  overflow: hidden;
-}
+/* Extra Small (≤480px) */
+@media (max-width: 480px) {
+  .faculties-card {
+    width: 95%;
+    padding: 16px;
+  }
 
-.animated-line::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #264087;
-  transition: width 0.4s ease;
-}
+  .faculties-image {
+    width: 100px;
+    height: 100px;
+  }
 
-.faculties-row:hover + .animated-line::after {
-  width: 100%;
+  .faculties-heading {
+    font-size: 1.8rem;
+  }
 }

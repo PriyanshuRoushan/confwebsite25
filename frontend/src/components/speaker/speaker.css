@@ -1,9 +1,11 @@
+/* SECTION */
 .speaker-section {
   padding: 50px 20px;
   text-align: center;
-  position: relative;
+  background-color: #f9f9f9;
 }
 
+/* HEADING */
 .speaker-heading {
   font-family: roboto;
   font-size: 2.5rem;
@@ -12,40 +14,23 @@
   font-weight: 700;
 }
 
-.speaker-row {
+/* GRID */
+.speaker-grid {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   margin-bottom: 40px;
 }
 
-/* Scrollable wrapper (last row) */
-.speaker-slider-wrapper {
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.speaker-slider-wrapper::-webkit-scrollbar {
-  display: none;
-}
-
-.speaker-grid {
-  display: inline-flex;
-  gap: 30px;
-}
-
+/* CARD */
 .speaker-card {
   font-family: roboto;
   background-color: #ffffff;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  width: 200px;
+  width: 220px;
   flex-shrink: 0;
   text-align: center;
   transition: transform 0.3s ease;
@@ -56,16 +41,18 @@
   transform: translateY(-5px);
 }
 
+/* IMAGE */
 .speaker-image {
   background-color: #264087;
   width: 140px;
   height: 140px;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 50%;
   margin-bottom: 15px;
   border: 4px solid blue;
 }
 
+/* TEXT */
 .speaker-name {
   font-size: 1.2rem;
   font-weight: 700;
@@ -79,14 +66,73 @@
   color: #555;
 }
 
-@media (max-width: 768px) {
+/* UNDERLINE */
+.animated-line {
+  position: relative;
+  width: 25%;
+  height: 2px;
+  margin: 0 auto 20px auto;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.animated-line::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #264087;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+.speaker-section:hover .animated-line::after {
+  transform: scaleX(1);
+}
+
+/* ====== RESPONSIVE FIX ====== */
+
+/* Tablet */
+@media (max-width: 1024px) {
   .speaker-card {
-    width: 180px;
+    width: 200px;
   }
 
   .speaker-image {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .speaker-heading {
+    font-size: 2.2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .speaker-grid {
+    gap: 20px;
+  }
+
+  .speaker-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .speaker-image {
+    width: 110px;
+    height: 110px;
+  }
+
+  .speaker-name {
+    font-size: 1.1rem;
+  }
+
+  .speaker-position {
+    font-size: 0.95rem;
   }
 
   .speaker-heading {
@@ -94,26 +140,19 @@
   }
 }
 
-/* 🔥 Animated Underline Below Each Row */
-.animated-line {
-  position: relative;
-  width: 25%;
-  height: 2px;
-  margin: -20px auto 40px auto;
-  overflow: hidden;
-}
+/* Extra Small (e.g. older phones) */
+@media (max-width: 480px) {
+  .speaker-card {
+    width: 95%;
+    padding: 18px;
+  }
 
-.animated-line::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #264087;
-  transition: width 0.4s ease;
-}
+  .speaker-image {
+    width: 100px;
+    height: 100px;
+  }
 
-.speaker-row:hover + .animated-line::after {
-  width: 100%;
+  .speaker-heading {
+    font-size: 1.8rem;
+  }
 }
