@@ -1,6 +1,5 @@
 /* Navbar container */
 .navbar {
-  /* font-family: 'Roboto'; */
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -17,7 +16,7 @@
 /* Banner above navbar */
 .navbar-waiver-banner {
   background-color: #f8f9fa;
-  padding: 10px 0;
+  padding: 10px 20px;
   text-align: center;
   font-size: 14px;
   border-bottom: 1px solid #e9ecef;
@@ -32,7 +31,8 @@
 
 /* Main nav */
 .navbar-main {
-  padding: 15px 0;
+  padding: 15px 20px;
+  position: relative;
 }
 
 /* Nav menu list */
@@ -110,19 +110,48 @@
   padding: 10px;
   position: absolute;
   right: 20px;
-  top: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1001;
 }
 
 .mobile-menu-icon .bar {
   height: 3px;
   width: 25px;
   background-color: #333;
-  margin: 4px 0;
+  margin: 3px 0;
   border-radius: 2px;
+  transition: all 0.3s ease;
 }
 
-/* Responsive rules */
+.mobile-menu-icon .close-icon {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Tablet responsiveness */
+@media (max-width: 1024px) {
+  .nav-item {
+    margin: 0 10px;
+  }
+  
+  .nav-item a {
+    font-size: 15px;
+  }
+}
+
+/* Mobile responsiveness */
 @media (max-width: 768px) {
+  .navbar-waiver-banner {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+  
+  .navbar-main {
+    padding: 10px 15px;
+  }
+  
   .nav-menu {
     position: absolute;
     top: 100%;
@@ -132,30 +161,111 @@
     flex-direction: column;
     display: none;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     z-index: 999;
     transition: all 0.3s ease-in-out;
-
+    border-top: 1px solid #e9ecef;
   }
 
   .nav-menu.active {
     display: flex;
+    animation: slideDown 0.3s ease-in-out;
   }
 
   .nav-item {
-    margin: 10px 0;
+    margin: 0;
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
   }
 
-  .navbar-main {
-    position: relative;
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .nav-item a {
+    padding: 15px 20px;
+    display: block;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .nav-item a:hover {
+    background-color: #f8f9fa;
+  }
+
+  .nav-item.active a {
+    background-color: #f0f4ff;
   }
 
   .mobile-menu-icon {
     display: flex;
   }
 
-  /* Optional: center items for mobile */
-  .nav-menu a {
-    padding: 10px 0;
+  /* Remove underline effects on mobile */
+  .nav-item a::after,
+  .nav-item.active a::after {
+    display: none;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .navbar-waiver-banner {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+  
+  .waiver-link {
+    display: block;
+    margin: 5px 0 0 0;
+  }
+  
+  .navbar-main {
+    padding: 8px 10px;
+  }
+  
+  .nav-item a {
+    padding: 12px 15px;
+    font-size: 15px;
+  }
+  
+  .mobile-menu-icon {
+    right: 15px;
+  }
+  
+  .mobile-menu-icon .bar {
+    width: 22px;
+    height: 2px;
+  }
+}
+
+/* Animation for mobile menu */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Prevent body scroll when mobile menu is open */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Ensure mobile menu works on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .nav-item a:hover {
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .nav-item a:active {
+    color: #264087;
+    background-color: #f8f9fa;
   }
 }

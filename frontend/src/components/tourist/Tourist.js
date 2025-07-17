@@ -16,6 +16,14 @@ function Tourist() {
       <h2>Nearby Tourist Attractions</h2>
       <div className="tourist-list">
 
+        
+        <div className="tourist-card">
+          <img src={iitroorkee} alt="IIT Roorkee" />
+          <h3>IIT Roorkee</h3>
+          <p>One of India's most prestigious engineering institutions with a beautiful historic campus.</p>
+          <a href="https://www.google.com/maps/dir/RIT+Roorkee/IIT+Roorkee" target="_blank" rel="noreferrer">View on Map</a>
+        </div>
+
         <div className="tourist-card">
           <img src={haridwar} alt="Haridwar" />
           <h3>Har Ki Pauri, Haridwar</h3>
@@ -30,21 +38,7 @@ function Tourist() {
           <a href="https://www.google.com/maps/dir/RIT+Roorkee/Rishikesh" target="_blank" rel="noreferrer">View on Map</a>
         </div>
 
-        <div className="tourist-card">
-          <img src={rajaji} alt="Rajaji National Park" />
-          <h3>Rajaji National Park</h3>
-          <p>Wildlife reserve ideal for safaris, located 40 km from campus.</p>
-          <a href="https://www.google.com/maps/dir/RIT+Roorkee/Rajaji+National+Park" target="_blank" rel="noreferrer">View on Map</a>
-        </div>
-
-        <div className="tourist-card">
-          <img src={solani} alt="Solani Aqueduct" />
-          <h3>Solani Aqueduct</h3>
-          <p>Historical marvel and engineering beauty just a few km from RIT Roorkee.</p>
-          <a href="https://www.google.com/maps/dir/RIT+Roorkee/Solani+Aqueduct+Roorkee" target="_blank" rel="noreferrer">View on Map</a>
-        </div>
-
-        <div className="tourist-card">
+          <div className="tourist-card">
           <img src={dehradun} alt="Dehradun" />
           <h3>Dehradun</h3>
           <p>Capital city of Uttarakhand known for scenic beauty and educational institutions.</p>
@@ -58,7 +52,7 @@ function Tourist() {
           <a href="https://www.google.com/maps/dir/RIT+Roorkee/Mussoorie" target="_blank" rel="noreferrer">View on Map</a>
         </div>
 
-        <div className="tourist-card">
+                <div className="tourist-card">
           <img src={dhanaulti} alt="Dhanaulti" />
           <h3>Dhanaulti</h3>
           <p>A peaceful hill station surrounded by forests, just 70 km from RIT.</p>
@@ -66,10 +60,17 @@ function Tourist() {
         </div>
 
         <div className="tourist-card">
-          <img src={iitroorkee} alt="IIT Roorkee" />
-          <h3>IIT Roorkee</h3>
-          <p>One of India's most prestigious engineering institutions with a beautiful historic campus.</p>
-          <a href="https://www.google.com/maps/dir/RIT+Roorkee/IIT+Roorkee" target="_blank" rel="noreferrer">View on Map</a>
+          <img src={rajaji} alt="Rajaji National Park" />
+          <h3>Rajaji National Park</h3>
+          <p>Wildlife reserve ideal for safaris, located 40 km from campus.</p>
+          <a href="https://www.google.com/maps/dir/RIT+Roorkee/Rajaji+National+Park" target="_blank" rel="noreferrer">View on Map</a>
+        </div>
+
+        <div className="tourist-card">
+          <img src={solani} alt="Solani Aqueduct" />
+          <h3>Solani Aqueduct</h3>
+          <p>Historical marvel and engineering beauty just a few km from RIT Roorkee.</p>
+          <a href="https://www.google.com/maps/dir/RIT+Roorkee/Solani+Aqueduct+Roorkee" target="_blank" rel="noreferrer">View on Map</a>
         </div>
 
       </div>

@@ -38,8 +38,11 @@ const Preparing = () => {
       <h3 className="prep-subheading">&rarr;Template Downloads</h3>
       <p>Use the following links to download official AIP templates:</p>
       <ul className="prep-list">
-        <li><a href="/files/RIT-CONFERENCE.zip" download="RIT_CONFERENCE_Template.zip">
-        Download zip file
+        <li><a href="https://drive.google.com/file/d/1UqlFLCCq9e5qNQ5sJCSWZbqXCufvEF8r/view?usp=sharing" download="RIT_CONFERENCE_Template.zip">
+        Download Pdf file
+      </a><br></br></li>
+       <li><a href="https://docs.google.com/document/d/1rgCtDPcrst0AuWSRTf7YrtapHmjvhglx/edit?usp=sharing&ouid=116911668204018329439&rtpof=true&sd=true" download="RIT_CONFERENCE_Template.zip">
+        Download Word file
       </a>
 </li>
       </ul>

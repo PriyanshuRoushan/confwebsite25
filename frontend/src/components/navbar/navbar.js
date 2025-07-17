@@ -1,18 +1,38 @@
 /* eslint-disable */
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './navbar.css';
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState('Home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navbarRef = useRef(null);
 
   const handleLinkClick = (linkName) => {
     setActiveLink(linkName);
     setIsMobileMenuOpen(false); // Close menu after clicking
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (isMobileMenuOpen && navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    // Add when mounted
+    document.addEventListener('mousedown', handleClickOutside);
+    // For touch devices
+    document.addEventListener('touchstart', handleClickOutside);
+
+    // Return cleanup function to be called when unmounted
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
+    };
+  }, [isMobileMenuOpen]);
+
   return (
-    <nav className="navbar">
+    <nav className="navbar" ref={navbarRef}>
       <div className="navbar-container">
         <div className="navbar-waiver-banner">
           icetapci.2025@ritroorkee.com
@@ -20,7 +40,6 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-main">
-          {/* Hamburger Icon */}
           {/* Mobile Menu Icon */}
           <div className="mobile-menu-icon" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? (
@@ -33,7 +52,6 @@ const Navbar = () => {
               </>
             )}
           </div>
-
 
           {/* Navigation Menu */}
           <ul className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
@@ -81,7 +99,6 @@ const Navbar = () => {
               }}>Registration</a>
             </li>
 
-
             <li className={`nav-item ${activeLink === 'Committee' ? 'active' : ''}`}>
               <a href="#" onClick={(e) => {
                 e.preventDefault();
@@ -92,8 +109,6 @@ const Navbar = () => {
                 handleLinkClick('Committee');
               }}>Committee</a>
             </li>
-
-
           </ul>
         </div>
       </div>
