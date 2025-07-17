@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   FaPhoneAlt, FaEnvelope, FaGlobe, FaMapMarkerAlt,
-  FaCalendarAlt, FaUsers, FaTwitter, FaLinkedin, FaFacebook, FaInstagram
+  FaCalendarAlt, FaTwitter, FaLinkedin, FaFacebook, FaInstagram
 } from 'react-icons/fa';
 import Location from "../location/location";
 
