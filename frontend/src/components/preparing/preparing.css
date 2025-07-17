@@ -1,71 +1,59 @@
+/* preparing.css */
+
 .preparing-section {
-  padding: 80px 60px;
-  background-color: #f9fafe;
-  font-family: "Segoe UI", sans-serif;
-  color: #1c1c1c;
-  line-height: 1.7;
-  max-width: 1000px;
-  margin: 0 auto;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  background-color: #f8f9fa;
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
   border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .prep-heading {
+  font-size: 2rem;
   text-align: center;
-  color: #1f4b99;
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 30px;
+  color: #264087;
+  margin-bottom: 1.5rem;
 }
 
-.prep-intro,
-.prep-note {
-  font-size: 16px;
+.prep-intro, .prep-note {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
   color: #333;
-  margin-bottom: 16px;
-  background-color: #ffffff;
-  padding: 12px 18px;
-  border-left: 4px solid #1f4b99;
+}
+
+.prep-note {
+  background-color: #eaf1fc;
+  border-left: 4px solid #264087;
+  padding: 1rem;
   border-radius: 6px;
 }
 
 .prep-subheading {
-  font-size: 20px;
-  margin-top: 35px;
+  font-size: 1.25rem;
   color: #264087;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
 }
 
 .prep-list {
   list-style-type: disc;
-  padding-left: 24px;
-  margin-top: 15px;
-  color: #444;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .prep-list li {
-  margin-bottom: 10px;
-  font-size: 16px;
-  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  color: #444;
 }
 
-@media (max-width: 768px) {
-  .preparing-section {
-    padding: 50px 25px;
-  }
+a {
+  color: #0a58ca;
+  text-decoration: none;
+}
 
-  .prep-heading {
-    font-size: 26px;
-  }
-
-  .prep-subheading {
-    font-size: 18px;
-  }
-
-  .prep-list li {
-    font-size: 15px;
-  }
+a:hover {
+  text-decoration: underline;
 }
