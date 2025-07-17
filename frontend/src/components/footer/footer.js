@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   FaPhoneAlt, FaEnvelope, FaGlobe, FaMapMarkerAlt,
-  FaCalendarAlt, FaTwitter, FaLinkedin, FaFacebook, FaInstagram
+  FaCalendarAlt,FaLinkedin, 
 } from 'react-icons/fa';
 import Location from "../location/location";
 
@@ -11,31 +11,31 @@ const ConferenceFooter = () => {
       name: 'Ashwani Raj',
       linkedin: 'https://linkedin.com/in/ashwani-raj-57480028a',
       instagram: '#',
-      gmail: 'ashwani@example.com'
+      gmail: 'ashwaniraj084@gmail.com'
     },
     {
       name: 'Harsh Raj Shukla',
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/harsh-raj-shukla-043481296',
       instagram: '#',
-      gmail: 'harsh@example.com'
+      gmail: 'hrofficial6458@gmail.com'
     },
     {
       name: 'Priyanshu Roushan',
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/priyanshu-roushan',
       instagram: '#',
-      gmail: 'priyanshiuu@example.com'
+      gmail: 'priyanshuroushan01@gmail.com'
     },
     {
       name: 'Aditya Raj',
-      linkedin: '#',
+      linkedin: 'http://linkedin.com/in/astro-adityaraj/',
       instagram: '#',
-      gmail: 'http://linkedin.com/in/astro-adityaraj/'
+      gmail: ''
     },
     {
       name: 'Vaishali Tiwari',
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/vaishali-tiwari-8030bb318',
       instagram: '#',
-      gmail: 'vaishali@example.com'
+      gmail: 'vaishalitiwari152005@gmail.com'
     }
   ];
 
@@ -186,12 +186,7 @@ const ConferenceFooter = () => {
           <div style={styles.contactInfo}><FaEnvelope style={styles.icon} /><a href="mailto:icetapci.2025@ritroorkee.com" style={styles.link}>icetapci.2025@ritroorkee.com</a></div>
           <div style={styles.contactInfo}><FaPhoneAlt style={styles.icon} /><span style={styles.paragraph}>+91-1332-355555</span></div>
           <div style={styles.contactInfo}><FaGlobe style={styles.icon} /><a href="https://ritroorkee.com" style={styles.link} target="_blank" rel="noopener noreferrer">ritroorkee.com</a></div>
-          <div style={styles.socialLinks}>
-            <FaTwitter style={styles.socialIcon} />
-            <FaLinkedin style={styles.socialIcon} />
-            <FaFacebook style={styles.socialIcon} />
-            <FaInstagram style={styles.socialIcon} />
-          </div>
+   
           <div style={{ marginTop: '20px' }}>
             <Location compact={true} />
           </div>
