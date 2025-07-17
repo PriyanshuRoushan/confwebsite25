@@ -1,29 +1,35 @@
 .registration-section {
-  padding: 20px 40px;
+  padding: 40px 24px;
   background-color: #f9fafe;
   color: #1f2b46;
   font-family: "Segoe UI", sans-serif;
   scroll-margin-top: 100px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .reg-heading {
   text-align: center;
   color: #1f4b99;
-  margin-bottom: 30px;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 600;
+  margin-bottom: 30px;
 }
 
 .reg-table-container {
-  overflow-x: auto;
-  background: white;
-  padding: 20px;
+  background: #fff;
+  padding: 24px;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(31, 75, 153, 0.1);
 }
 
+.reg-table-scroll {
+  overflow-x: auto;
+}
+
 .reg-table {
   width: 100%;
+  min-width: 720px;
   border-collapse: collapse;
   font-size: 16px;
 }
@@ -31,13 +37,14 @@
 .reg-table th,
 .reg-table td {
   padding: 12px 16px;
-  border: 1px solid #cfd9e4;
+  border: 1px solid #d0dae7;
   text-align: center;
 }
 
 .reg-table th {
   background-color: #1f4b99;
-  color: white;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .reg-table tbody tr:nth-child(even) {
@@ -46,18 +53,19 @@
 
 .note {
   margin-top: 20px;
-  color: #cc0000;
+  color: #b71c1c;
   text-align: center;
   font-size: 14px;
+  line-height: 1.6;
 }
 
 /* Account Details Section */
 .account-details {
   margin-top: 40px;
-  padding: 20px;
-  background-color: #fff;
+  padding: 24px;
+  background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(31, 75, 153, 0.1);
+  box-shadow: 0 0 10px rgba(31, 75, 153, 0.08);
 }
 
 .account-heading {
@@ -65,6 +73,7 @@
   color: #d35400;
   font-size: 24px;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .account-table {
@@ -75,9 +84,33 @@
 
 .account-table td {
   padding: 12px 16px;
-  border: 1px solid #cfd9e4;
+  border: 1px solid #d0dae7;
 }
 
 .account-table tr:nth-child(even) {
-  background-color: #f9fafe;
+  background-color: #f3f6fc;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .reg-heading {
+    font-size: 24px;
+  }
+
+  .account-heading {
+    font-size: 20px;
+  }
+
+  .reg-table,
+  .account-table {
+    font-size: 14px;
+  }
+
+  .note {
+    font-size: 13px;
+  }
+
+  .registration-section {
+    padding: 20px 16px;
+  }
 }

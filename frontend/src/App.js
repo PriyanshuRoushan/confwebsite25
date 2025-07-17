@@ -8,7 +8,7 @@ import Tracks from './components/tracks/tracks';
 import CallForPaper from './components/callforpaper/call4Paper';
 import Footer from './components/footer/footer'
 import Registration from './components/registration/Registration';
-import TimelineComponent from './components/TimelineComponent/TimelineComponent';
+// import TimelineComponent from './components/TimelineComponent/TimelineComponent';
 import Preparing from './components/preparing/preparing';
 import Acknowledgement from './components/acknowledgement/acknowledgement'
 import Tourist from './components/tourist/Tourist';
@@ -23,7 +23,7 @@ function App() {
       <AboutRit/>
       <Speakers/>
       <Tracks />
-      <TimelineComponent/>
+      {/* <TimelineComponent/> */}
       <CallForPaper/>
       <Registration/> 
       <Preparing/>
