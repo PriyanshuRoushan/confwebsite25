@@ -3,6 +3,7 @@
   background: linear-gradient(to right, #f8fbff, #f1f4f8);
   padding: 60px 20px;
   font-family: 'Segoe UI', sans-serif;
+  scroll-margin-top: 100px;
 }
 
 /* Section Card */

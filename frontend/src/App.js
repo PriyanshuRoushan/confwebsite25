@@ -17,8 +17,9 @@ function App() {
       <AboutRit/>
       <Tracks />
       <Speakers/>
-      <Registration/> 
       <CallForPaper/>
+      <Registration/> 
+      <hr></hr>
       <Faculties />
       <Footer/>
     </div>

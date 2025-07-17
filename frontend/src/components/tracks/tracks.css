@@ -20,6 +20,7 @@
   max-width: 1200px;
   margin: auto;
   border-radius: 12px;
+  scroll-margin-top: 100px;
 }
 
 /* Grid layout for track cards */
@@ -35,7 +36,7 @@
   padding: 15px 18px; /* Slightly less padding */
   border-left: 6px solid #0077cc;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 119, 204, 0.08);
+  box-shadow: 0px 1px 92px -1px #b7b7b7;
   transition: transform 0.3s ease, background-color 0.3s ease;
   background-color: #fff;
   cursor: default;

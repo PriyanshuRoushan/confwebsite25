@@ -67,16 +67,6 @@ const Navbar = () => {
                 handleLinkClick('Speakers');
               }}>Speakers</a>
             </li>
-            {/* <li className={`nav-item ${activeLink === 'Schedule' ? 'active' : ''}`}>
-              <a href="#" onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('main-schedule')?.scrollIntoView({
-                  behavior: 'smooth',
-                  block: "start"
-                });
-                handleLinkClick('Schedule');
-              }}>Schedules</a>
-            </li> */}
             <li className={`nav-item ${activeLink === 'Tracks' ? 'active' : ''}`}>
               <a href="#" onClick={(e) => {
                 e.preventDefault();
@@ -84,7 +74,16 @@ const Navbar = () => {
                 handleLinkClick('Tracks');
               }}>Tracks</a>
             </li>
-
+            <li className={`nav-item ${activeLink === 'Committee' ? 'active' : ''}`}>
+              <a href="#" onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('committee')?.scrollIntoView({
+                  behavior: 'smooth',
+                  block: "start"
+                });
+                handleLinkClick('Committee');
+              }}>Committee</a>
+            </li>
           </ul>
         </div>
       </div>

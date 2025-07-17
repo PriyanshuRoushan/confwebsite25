@@ -168,7 +168,16 @@ const ConferenceFooter = () => {
 
         {/* Column 3 - Student Coordinators */}
         <div style={styles.column} >
-          <h3 style={styles.heading}>Student Coordinators<div style={styles.headingLine}></div></h3>
+          <h3 style={styles.heading}>Student Coordinators<div style={styles.headingLine}></div>
+          <br></br>
+          <span style={{ 
+            marginTop:"0px", 
+            color: "#b8b8b8", 
+            fontSize:"15px", 
+            fontWeight:"lighter"
+          }}>( The Team )</span>
+
+           </h3>
           {coordinators.map((coord, i) => (
             <div key={i} style={styles.coordinatorCard} >
               <div style={styles.coordinatorName}>{coord.name}</div>
