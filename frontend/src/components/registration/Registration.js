@@ -3,7 +3,7 @@ import "./Registration.css";
 
 const Registration = () => {
   return (
-    <section className="registration-section">
+    <section className="registration-section" id="main-registration">
       <h2 className="reg-heading">🎓 Conference Registration</h2>
 
       <div className="reg-table-container">

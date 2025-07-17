@@ -16,8 +16,9 @@ function App() {
       <Hero/>
       <AboutRit/>
       <Tracks />
-      <Speakers/>
       <Registration/> 
+      <Speakers/>
+
       <CallForPaper/>
       <Faculties />
       <Footer/>
