@@ -53,6 +53,21 @@ const Navbar = () => {
               }}>About</a>
             </li>
 
+            <li className={`nav-item ${activeLink === 'Tracks' ? 'active' : ''}`}>
+              <a href="#" onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('main-tracks')?.scrollIntoView({ behavior: 'smooth' });
+                handleLinkClick('Tracks');
+              }}>Tracks</a>
+            </li>
+
+            <li className={`nav-item ${activeLink === 'Registration' ? 'active' : ''}`}>
+              <a href="#" onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('main-registration')?.scrollIntoView({ behavior: 'smooth' });
+                handleLinkClick('Registration');
+              }}>Registration</a>
+            </li>
             <li className={`nav-item ${activeLink === 'Call' ? 'active' : ''}`}>
               <a href="#callforpaper" onClick={(e) => {
                 e.preventDefault();
@@ -77,13 +92,7 @@ const Navbar = () => {
                 handleLinkClick('Schedule');
               }}>Schedules</a>
             </li> */}
-            <li className={`nav-item ${activeLink === 'Tracks' ? 'active' : ''}`}>
-              <a href="#" onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('main-tracks')?.scrollIntoView({ behavior: 'smooth' });
-                handleLinkClick('Tracks');
-              }}>Tracks</a>
-            </li>
+
 
           </ul>
         </div>
