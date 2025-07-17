@@ -16,7 +16,7 @@ const Hero = () => {
 
   return (
     <>
-    <section className="hero" style={heroStyle}>
+    <section className="hero" id='hero' style={heroStyle}>
       <div className="hero-container">
         <div className="hero-left">
           <h1 className="hero-title">International Conference on Emerging Technologies in Applied Engineering and Computational Intelligence <br />(ICETAPCI-2025)</h1>

@@ -1,6 +1,6 @@
 /* Navbar container */
 .navbar {
-  font-family: 'Roboto';
+  /* font-family: 'Roboto'; */
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -101,6 +101,7 @@
 .nav-item a:hover::after {
   width: 100%;
 }
+
 /* Mobile menu icon */
 .mobile-menu-icon {
   display: none;
@@ -133,6 +134,8 @@
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     z-index: 999;
+    transition: all 0.3s ease-in-out;
+
   }
 
   .nav-menu.active {

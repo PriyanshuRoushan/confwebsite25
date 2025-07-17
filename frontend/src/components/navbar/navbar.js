@@ -21,39 +21,66 @@ const Navbar = () => {
 
         <div className="navbar-main">
           {/* Hamburger Icon */}
+          {/* Mobile Menu Icon */}
           <div className="mobile-menu-icon" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-            <span className="bar"></span>
-            <span className="bar"></span>
-            <span className="bar"></span>
+            {isMobileMenuOpen ? (
+              <span className="close-icon">✖</span>
+            ) : (
+              <>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+              </>
+            )}
           </div>
+
 
           {/* Navigation Menu */}
           <ul className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
             <li className={`nav-item ${activeLink === 'Home' ? 'active' : ''}`}>
-              <a href="/" onClick={() => handleLinkClick('Home')}>Home</a>
+              <a href="#hero" onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' });
+                handleLinkClick('Home');
+              }}>Home</a>
             </li>
             <li className={`nav-item ${activeLink === 'About' ? 'active' : ''}`}>
-            <a href="#" onClick={(e) => { e.preventDefault(); 
-            document.getElementById('about-rit')?.scrollIntoView({ behavior: 'smooth' });
-            handleLinkClick('About');}}>About</a>
+              <a href="#" onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('about-rit')?.scrollIntoView({ behavior: 'smooth' });
+                handleLinkClick('About');
+              }}>About</a>
             </li>
             <li className={`nav-item ${activeLink === 'Call' ? 'active' : ''}`}>
-              <a href="#call-for-paper" onClick={() => handleLinkClick('Call')}>Call for Paper</a>
+              <a href="#callforpaper" onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('callforpaper')?.scrollIntoView({ behavior: 'smooth' });
+                handleLinkClick('Call');
+              }}>Call for Paper</a>
             </li>
-            <li className={`nav-item ${activeLink === 'Speaker' ? 'active' : ''}`}>
-            <a href="#" onClick={(e) => { e.preventDefault(); 
-            document.getElementById('speakers')?.scrollIntoView({ behavior: 'smooth' });
-            handleLinkClick('Speakers');}}>Speakers</a>
+            <li className={`nav-item ${activeLink === 'Speakers' ? 'active' : ''}`}>
+              <a href="#" onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('speakers')?.scrollIntoView({ behavior: 'smooth' });
+                handleLinkClick('Speakers');
+              }}>Speakers</a>
             </li>
-            <li className={`nav-item ${activeLink === 'Schedule' ? 'active' : ''}`}>
-            <a href="#" onClick={(e) => { e.preventDefault(); 
-            document.getElementById('main-schedule')?.scrollIntoView({ behavior: 'smooth' });
-            handleLinkClick('Schedule');}}>Schedules</a>
-            </li>
+            {/* <li className={`nav-item ${activeLink === 'Schedule' ? 'active' : ''}`}>
+              <a href="#" onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('main-schedule')?.scrollIntoView({
+                  behavior: 'smooth',
+                  block: "start"
+                });
+                handleLinkClick('Schedule');
+              }}>Schedules</a>
+            </li> */}
             <li className={`nav-item ${activeLink === 'Tracks' ? 'active' : ''}`}>
-            <a href="#" onClick={(e) => { e.preventDefault(); 
-            document.getElementById('main-tracks')?.scrollIntoView({ behavior: 'smooth' });
-            handleLinkClick('Tracks');}}>Tracks</a>
+              <a href="#" onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('main-tracks')?.scrollIntoView({ behavior: 'smooth' });
+                handleLinkClick('Tracks');
+              }}>Tracks</a>
             </li>
           </ul>
         </div>
