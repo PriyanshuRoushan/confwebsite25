@@ -127,7 +127,8 @@
   .hero-container {
     flex-direction: column;
     min-height: auto;
-  }
+    margin: 0 10px 0px 10px;
+    }
   
   .hero-left, .hero-right {
     width: 100%;

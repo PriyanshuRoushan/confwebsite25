@@ -14,7 +14,9 @@ const Faculties = () => {
   return (
     <div className="product-carousel" >
       <section className="faculties-section" id="committee">
-        <h2 className="faculties-heading">Organizing Committee</h2>
+      <header className="faculties-heading ">
+        Organizing Committee
+      </header>
         <br />
         {Object.entries(groupedByRole).map(([role, members], idx) => (
           <div key={idx} className="faculties-group">
