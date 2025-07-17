@@ -41,7 +41,7 @@ const FacultiesData = [
     role: 'CO-PATRON',
     name: 'Prof. Nitin Kumar Tripathi ',
     image: Nitin,
-    title: '',
+    title: <p><div>PROFESSOR<br></br>DIRECTOR SDP<br></br>AIT THAILAND</div></p>,
   },
     {
     role: 'GENERAL CHAIR',
@@ -50,16 +50,16 @@ const FacultiesData = [
     title: <p><div>DIRECTOR<br></br>RIT ROORKEE</div></p>,
   },
       {
-    role: <div style={{ fontSize: "16px" }}>TECHNICAL PROGRAM CHAIR</div>,
+    role: 'TECHNICAL PROGRAM CHAIR',
     name: 'Dr. Deepak Arya',
     image: Deepak,
     title: <p><div>PROFESSOR<br></br>RIT ROORKEE</div></p>,
   },
       {
-    role: <div style={{ fontSize: "15.5px" }}>TECHNICAL PROGRAM CHAIR</div>,
+    role: 'TECHNICAL PROGRAM CHAIR',
     name: 'Prof. (Dr.) Rajeev Kumar',
     image: Rajeev,
-    title: '',
+    title: <p><div>PROFESSOR<br></br>MIT MORADABAD</div></p>,
   },
 
   {

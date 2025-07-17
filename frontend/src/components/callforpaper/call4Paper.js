@@ -81,7 +81,7 @@ const CallForPaper = () => {
   };
 
   return (
-    <div>
+    <div id='call-for-paper'>
       <header style={styles.header}>
         2025 — Call for Paper
       </header>
