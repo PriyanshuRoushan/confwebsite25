@@ -8,12 +8,6 @@ import Location from "../location/location";
 const ConferenceFooter = () => {
   const coordinators = [
     {
-      name: 'Ashwani Raj',
-      linkedin: 'https://linkedin.com/in/ashwani-raj-57480028a',
-      instagram: '#',
-      gmail: 'ashwaniraj084@gmail.com'
-    },
-    {
       name: 'Harsh Raj Shukla',
       linkedin: 'https://www.linkedin.com/in/harsh-raj-shukla-043481296',
       instagram: '#',
