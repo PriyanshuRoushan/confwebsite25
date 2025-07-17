@@ -8,18 +8,18 @@ const speakerData = [
   {
     name: 'Dr. Amit Agarwal',
     image: AmitAgarwal,
-    title: <p><div>CONFERENCE CO-CHAIR<br></br>Director<br></br>ITG Gopeshwar</div></p>,
+    title: <p><div>Director<br></br>ITG Gopeshwar</div></p>,
   },
 
   {
     name: 'Prof.(Dr.) Rakesh K Dwivedi',
     image : Rakesh,
-    title: <p><div>CONFERENCE CO-CHAIR<br></br>Director<br></br>TMU Moradabad</div></p>,
+    title: <p><div>Director<br></br>TMU Moradabad</div></p>,
   },
   {
       name: 'Dr. Amit Kumar Bansal',
       image: Amitkumar,
-      title: <p><div>CONFERENCE CO-CHAIR<br></br>Director<br>
+      title: <p><div>Director<br>
       </br>KSVCEM, Bijnor
           </div></p>,
     },
