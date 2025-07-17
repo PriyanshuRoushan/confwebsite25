@@ -8,12 +8,10 @@ import Tracks from './components/tracks/tracks';
 import CallForPaper from './components/callforpaper/call4Paper';
 import Footer from './components/footer/footer'
 import Registration from './components/registration/Registration';
-<<<<<<< HEAD
 import TimelineComponent from './components/TimelineComponent/TimelineComponent';
-=======
 import Preparing from './components/preparing/preparing';
 import Acknowledgement from './components/acknowledgement/acknowledgement'
->>>>>>> b0642ee07ad58da0a7349289b02fc58e70d3f4c4
+
 
 
 function App() {
@@ -23,12 +21,8 @@ function App() {
       <Hero/>
       <AboutRit/>
       <Speakers/>
-<<<<<<< HEAD
-      <Registration/> 
-      <TimelineComponent/>
-=======
       <Tracks />
->>>>>>> b0642ee07ad58da0a7349289b02fc58e70d3f4c4
+      <TimelineComponent/>
       <CallForPaper/>
       <Registration/> 
       <Preparing/>
