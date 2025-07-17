@@ -32,7 +32,7 @@ const TimelineComponent = () => {
         progressDot.style.left = `${dotLeft}px`;
       }, 100);
     }
-  }, []);
+  }, );
 
   return (
     <div className="timeline-container">
