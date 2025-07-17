@@ -28,8 +28,8 @@ const ConferenceFooter = () => {
     {
       name: 'Aditya Raj',
       linkedin: 'http://linkedin.com/in/astro-adityaraj/',
-      instagram: 'aditya.me269@gmail.com',
-      gmail: ''
+      instagram: '',
+      gmail: 'aditya.me269@gmail.com'
     },
     {
       name: 'Vaishali Tiwari',
