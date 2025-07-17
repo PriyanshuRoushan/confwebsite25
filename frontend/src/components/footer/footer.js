@@ -148,8 +148,7 @@ const ConferenceFooter = () => {
         {/* Column 1 - Conference Info */}
         <div style={styles.column}>
           <h3 style={styles.heading}>ICETAPCI 2025<div style={styles.headingLine}></div></h3>
-          <div style={styles.contactInfo}><FaCalendarAlt style={styles.icon} /><span style={styles.paragraph}>March 15–17, 2025</span></div>
-          <div style={styles.contactInfo}><FaUsers style={styles.icon} /><span style={styles.paragraph}>500+ Participants</span></div>
+          <div style={styles.contactInfo}><FaCalendarAlt style={styles.icon} /><span style={styles.paragraph}>DECEMBER 5-6, 2025</span></div>
           <div style={styles.contactInfo}><FaMapMarkerAlt style={styles.icon} /><span style={styles.paragraph}>RIT Roorkee, Uttarakhand</span></div>
         </div>
 
