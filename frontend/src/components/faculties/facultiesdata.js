@@ -12,9 +12,10 @@ import Rajeev from "../assets/faculties/Prof Rajeev.png"
 import Deepak from "../assets/faculties/Deepak.png"
 import Parag from "../assets/faculties/Parag.png"
 import Nigam from "../assets/faculties/Nigam.png"
-import Fake from "../assets/faculties/Fake.png"
 import Nitin from "../assets/faculties/Nitin.png"
 import Naman from "../assets/faculties/Naman.png"
+import Yash from "../assets/faculties/Yash.png"
+// import Fake from "../assets/faculties/Fake.png"
 
 
 
@@ -28,7 +29,7 @@ const FacultiesData = [
     {
     role: 'PATRON',
     name: 'Mr. Yash Agarwal',
-    image: Fake,
+    image: Yash,
     title: 'MANAGEMENT TRUSTEE',
   },
    {
