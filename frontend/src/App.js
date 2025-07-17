@@ -8,6 +8,8 @@ import Tracks from './components/tracks/tracks';
 import CallForPaper from './components/callforpaper/call4Paper';
 import Footer from './components/footer/footer'
 import Registration from './components/registration/Registration';
+import TimelineComponent from './components/TimelineComponent/TimelineComponent';
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
       <Tracks />
       <Speakers/>
       <Registration/> 
+      <TimelineComponent/>
       <CallForPaper/>
       <Faculties />
       <Footer/>

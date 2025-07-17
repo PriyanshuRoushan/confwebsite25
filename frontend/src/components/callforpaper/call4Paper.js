@@ -101,8 +101,12 @@ const CallForPaper = () => {
           </ul>
 
           <div style={styles.dates}>
-            <p><strong>Paper Submission Deadline:</strong> 31st July 2025</p>
-            <p><strong>Acceptance Notification:</strong> 15th August 2025</p>
+            <p><strong> Call For Papers:</strong> 16th August 2025</p>
+            <p><strong>Last Date of Submission:</strong> 10th September 2025</p>
+            <p><strong>Acceptance Notification:</strong> 30th September 2025</p>
+            <p><strong>Final Camera-Ready Paper: </strong> 10th October 2025</p>
+            <p><strong>Registration Deadline: </strong> 20th November 2025</p>
+            <p><strong>Conference Date:</strong> 5th December2025 - 6th December2025</p>
           </div>
         </div>
 
