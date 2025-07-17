@@ -37,7 +37,7 @@ const Preparing = () => {
       <h3 className="prep-subheading">&rarr;Template Downloads</h3>
       <p>Use the following links to download official AIP templates:</p>
       <ul className="prep-list">
-        <li><a href="/files/RIT-CONFERENCE.zip" download="RIT_CONFERENCE_Template.zip">
+        <li><a href="https://drive.google.com/file/d/1TasS_J9-KUrUHjxmLA4d-1Y52mirz0R4/view?usp=sharing" download="RIT_CONFERENCE_Template.zip">
         Download zip file
       </a>
 </li>
