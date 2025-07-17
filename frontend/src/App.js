@@ -29,9 +29,10 @@ function App() {
       <Preparing/>
       <hr></hr>
       <Faculties />
+      <Tourist />
       <Acknowledgement/>
       <Footer/>
-      <Tourist />
+      
     </div>
   );
 }
