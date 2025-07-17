@@ -11,6 +11,7 @@ import Registration from './components/registration/Registration';
 import TimelineComponent from './components/TimelineComponent/TimelineComponent';
 import Preparing from './components/preparing/preparing';
 import Acknowledgement from './components/acknowledgement/acknowledgement'
+import Tourist from './components/tourist/Tourist';
 
 
 
@@ -30,6 +31,7 @@ function App() {
       <Faculties />
       <Acknowledgement/>
       <Footer/>
+      <Tourist />
     </div>
   );
 }

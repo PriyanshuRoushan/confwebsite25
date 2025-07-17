@@ -1,0 +1,60 @@
+.tourist-section {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.tourist-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.tourist-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.tourist-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.tourist-card:hover {
+  transform: translateY(-5px);
+}
+
+.tourist-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.tourist-card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.tourist-card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.tourist-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.tourist-card a:hover {
+  text-decoration: underline;
+}
