@@ -22,7 +22,7 @@ const Hero = () => {
           <h1 className="hero-title">International Conference on Emerging Technologies in Applied Engineering and Computational Intelligence <br />(ICETAPCI-2025)</h1>
           <h2 className="hero-subtitle">2nd International Conference</h2>
           
-          <CountdownDaysOnly deadline="2025-08-30" />
+          <CountdownDaysOnly deadline="2025-09-10" />
         
         </div>
         <div className="hero-right">
@@ -34,10 +34,10 @@ const Hero = () => {
               REGISTER NOW <span className="arrow">→</span>
             </a>
           </div>
-          <p className="registration-note">Registrations open till August 30, 2025</p>
+          <p className="registration-note">Registrations open till September 10, 2025</p>
           <div className="event-details-bottom">
             <br /><br />
-            <p className="date">xx-xx-2025</p>
+            <p className="date">05-06 Dec 2025</p>
             <p className="location">Auditorium, Roorkee Institute of Technology</p>
             <p className="location">Roorkee, Uttarakhand, India - 247667</p>
           </div>

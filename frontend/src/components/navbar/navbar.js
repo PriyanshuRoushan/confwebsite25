@@ -53,6 +53,21 @@ const Navbar = () => {
               }}>About</a>
             </li>
 
+            <li className={`nav-item ${activeLink === 'Tracks' ? 'active' : ''}`}>
+              <a href="#" onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('main-tracks')?.scrollIntoView({ behavior: 'smooth' });
+                handleLinkClick('Tracks');
+              }}>Tracks</a>
+            </li>
+
+            <li className={`nav-item ${activeLink === 'Registration' ? 'active' : ''}`}>
+              <a href="#" onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('main-registration')?.scrollIntoView({ behavior: 'smooth' });
+                handleLinkClick('Registration');
+              }}>Registration</a>
+            </li>
             <li className={`nav-item ${activeLink === 'Call' ? 'active' : ''}`}>
               <a href="#callforpaper" onClick={(e) => {
                 e.preventDefault();
@@ -67,23 +82,18 @@ const Navbar = () => {
                 handleLinkClick('Speakers');
               }}>Speakers</a>
             </li>
-            <li className={`nav-item ${activeLink === 'Tracks' ? 'active' : ''}`}>
+            {/* <li className={`nav-item ${activeLink === 'Schedule' ? 'active' : ''}`}>
               <a href="#" onClick={(e) => {
                 e.preventDefault();
-                document.getElementById('main-tracks')?.scrollIntoView({ behavior: 'smooth' });
-                handleLinkClick('Tracks');
-              }}>Tracks</a>
-            </li>
-            <li className={`nav-item ${activeLink === 'Committee' ? 'active' : ''}`}>
-              <a href="#" onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('committee')?.scrollIntoView({
+                document.getElementById('main-schedule')?.scrollIntoView({
                   behavior: 'smooth',
                   block: "start"
                 });
-                handleLinkClick('Committee');
-              }}>Committee</a>
-            </li>
+                handleLinkClick('Schedule');
+              }}>Schedules</a>
+            </li> */}
+
+
           </ul>
         </div>
       </div>
