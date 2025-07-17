@@ -41,7 +41,7 @@ const FacultiesData = [
     role: 'CO-PATRON',
     name: 'Prof. Nitin Kumar Tripathi ',
     image: Nitin,
-    title: '',
+    title: <p><div>PROFESSOR<br></br>DIRECTOR SDP<br></br>AIT THAILAND</div></p>,
   },
     {
     role: 'GENERAL CHAIR',
