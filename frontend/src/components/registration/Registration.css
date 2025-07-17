@@ -1,6 +1,9 @@
+.registration{
+    background: linear-gradient(to right, #f8fbff, #f1f4f8);
+
+}
 .registration-section {
   padding: 40px 24px;
-  background-color: #f9fafe;
   color: #1f2b46;
   font-family: "Segoe UI", sans-serif;
   scroll-margin-top: 100px;

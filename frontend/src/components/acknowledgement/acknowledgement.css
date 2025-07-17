@@ -1,8 +1,14 @@
-.acknowledgement {
+.acknowledgement{
+    background: linear-gradient(to right, #f8fbff, #f1f4f8);
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+}
+.ack-main {
   max-width: 90%;
-  margin: 70px auto;
   padding: 20px;
-  background-color: #f3f6fd;
+  background-color: #fff;
   border-left: 6px solid #264087;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);

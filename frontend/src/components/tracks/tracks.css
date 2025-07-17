@@ -1,4 +1,7 @@
 /* Title style */
+.tracks{
+  background: linear-gradient(to right, #f8fbff, #f1f4f8);
+}
 .title {
   color: #264087;
   border-radius: 20px;
@@ -19,6 +22,7 @@
   padding: 30px 20px;
   max-width: 1200px;
   margin: auto;
+  background: linear-gradient(to right, #f8fbff, #f1f4f8);
   border-radius: 12px;
   scroll-margin-top: 100px;
 }
@@ -68,7 +72,7 @@
 }
 
 .view-more-btn {
-  background-color: #264087;
+  background-color: #264087 ;
   color: white;
   padding: 8px 18px;
   font-size: 1rem;

@@ -3,6 +3,7 @@ import "./preparing.css";
 
 const Preparing = () => {
   return (
+    <div className="preparing">
     <section className="preparing-section">
       <h2 className="prep-heading">📄 Preparing Papers</h2>
 
@@ -43,6 +44,7 @@ const Preparing = () => {
 </li>
       </ul>
     </section>
+    </div>
   );
 };
 

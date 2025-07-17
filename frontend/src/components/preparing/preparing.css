@@ -1,5 +1,7 @@
 /* preparing.css */
-
+.preparing{
+  background: linear-gradient(to right, #f8fbff, #f1f4f8);
+}
 .preparing-section {
   background-color: #f8f9fa;
   padding: 2rem;

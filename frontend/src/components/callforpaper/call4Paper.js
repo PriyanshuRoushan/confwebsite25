@@ -22,7 +22,7 @@ const CallForPaper = () => {
       padding: 'clamp(20px, 4vw, 40px)',
       gap: '20px',
       boxSizing: 'border-box',
-      background: 'linear-gradient(to right, #f3f6fd, #e6ecfb)',
+      background: 'linear-gradient(to right, #f8fbff, #f1f4f8)',
       minHeight: '100vh',
       fontFamily: "'Segoe UI', sans-serif",
       scrollMarginTop: "40px"

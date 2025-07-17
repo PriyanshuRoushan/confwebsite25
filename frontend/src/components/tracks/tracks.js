@@ -8,6 +8,7 @@ function Tracks() {
   const visibleTracks = showAll ? Description : Description.slice(0, 3);
 
   return (
+    <div className="tracks">
     <div className="tracks-container" id="main-tracks">
       <div className="title">Tracks</div><br></br><br></br>
 
@@ -30,6 +31,7 @@ function Tracks() {
           </button>
         </div>
       )}
+    </div>
     </div>
   );
 }

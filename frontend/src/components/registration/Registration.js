@@ -3,6 +3,7 @@ import "./Registration.css";
 
 const Registration = () => {
   return (
+    <div className="registration">
     <section className="registration-section" id="main-registration">
       <h2 className="reg-heading">Conference Registration</h2>
 
@@ -51,6 +52,7 @@ const Registration = () => {
         </table>
       </div>
     </section>
+    </div>
   );
 };
 

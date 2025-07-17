@@ -1,5 +1,6 @@
 .tourist-section {
-  background-color: #f4f4f4;
+  background: linear-gradient(to right, #f8fbff, #f1f4f8);
+
   padding: 40px 20px;
   text-align: center;
 }
