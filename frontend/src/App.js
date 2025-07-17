@@ -18,12 +18,11 @@ function App() {
       <Navbar/>
       <Hero/>
       <AboutRit/>
-      <Tracks />
-      <Registration/> 
-      <Preparing/>
       <Speakers/>
+      <Tracks />
       <CallForPaper/>
       <Registration/> 
+      <Preparing/>
       <hr></hr>
       <Faculties />
       <Acknowledgement/>

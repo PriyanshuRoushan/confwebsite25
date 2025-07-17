@@ -11,7 +11,8 @@ const Hero = () => {
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     padding: '80px 0',
-    color: 'white'
+    color: 'white',
+    scrollMarginTop:"100px"
   };
 
   return (

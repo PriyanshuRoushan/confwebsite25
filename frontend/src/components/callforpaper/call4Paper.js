@@ -14,6 +14,7 @@ const CallForPaper = () => {
       textAlign: 'center',
       fontSize: '24px',
       fontWeight: 600,
+      scrollMarginTop:"100px"
     },
     container: {
       display: 'flex',
@@ -84,8 +85,8 @@ const CallForPaper = () => {
   };
 
   return (
-    <div id='callforpaper'>
-      <header style={styles.header}>
+    <div >
+      <header style={styles.header} id='callforpaper'>
         2025 — Call for Paper
       </header>
 

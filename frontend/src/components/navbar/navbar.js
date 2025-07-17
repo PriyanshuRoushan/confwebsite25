@@ -52,21 +52,19 @@ const Navbar = () => {
                 handleLinkClick('About');
               }}>About</a>
             </li>
-
+            <li className={`nav-item ${activeLink === 'Speakers' ? 'active' : ''}`}>
+              <a href="#" onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('speakers')?.scrollIntoView({ behavior: 'smooth' });
+                handleLinkClick('Speakers');
+              }}>Speakers</a>
+            </li>
             <li className={`nav-item ${activeLink === 'Tracks' ? 'active' : ''}`}>
               <a href="#" onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('main-tracks')?.scrollIntoView({ behavior: 'smooth' });
                 handleLinkClick('Tracks');
               }}>Tracks</a>
-            </li>
-
-            <li className={`nav-item ${activeLink === 'Registration' ? 'active' : ''}`}>
-              <a href="#" onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('main-registration')?.scrollIntoView({ behavior: 'smooth' });
-                handleLinkClick('Registration');
-              }}>Registration</a>
             </li>
             <li className={`nav-item ${activeLink === 'Call' ? 'active' : ''}`}>
               <a href="#callforpaper" onClick={(e) => {
@@ -75,23 +73,25 @@ const Navbar = () => {
                 handleLinkClick('Call');
               }}>Call for Paper</a>
             </li>
-            <li className={`nav-item ${activeLink === 'Speakers' ? 'active' : ''}`}>
+            <li className={`nav-item ${activeLink === 'Registration' ? 'active' : ''}`}>
               <a href="#" onClick={(e) => {
                 e.preventDefault();
-                document.getElementById('speakers')?.scrollIntoView({ behavior: 'smooth' });
-                handleLinkClick('Speakers');
-              }}>Speakers</a>
+                document.getElementById('main-registration')?.scrollIntoView({ behavior: 'smooth' });
+                handleLinkClick('Registration');
+              }}>Registration</a>
             </li>
-            {/* <li className={`nav-item ${activeLink === 'Schedule' ? 'active' : ''}`}>
+
+
+            <li className={`nav-item ${activeLink === 'Committee' ? 'active' : ''}`}>
               <a href="#" onClick={(e) => {
                 e.preventDefault();
-                document.getElementById('main-schedule')?.scrollIntoView({
+                document.getElementById('committee')?.scrollIntoView({
                   behavior: 'smooth',
                   block: "start"
                 });
-                handleLinkClick('Schedule');
-              }}>Schedules</a>
-            </li> */}
+                handleLinkClick('Committee');
+              }}>Committee</a>
+            </li>
 
 
           </ul>
