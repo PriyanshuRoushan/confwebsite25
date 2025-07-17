@@ -41,11 +41,11 @@ const ConferenceFooter = () => {
 
   const styles = {
     footer: {
-      background: 'linear-gradient(135deg, #0d47a1, #1565c0)',
+      background: 'linear-gradient(135deg, #264087, #1565c0)',
       color: '#fff',
       padding: '40px 5%',
       fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
-      borderTop: '4px solid #42a5f5',
+      borderTop: '4px solid #D63736',
     },
     container: {
       display: 'grid',
@@ -69,7 +69,7 @@ const ConferenceFooter = () => {
       left: 0,
       width: '35px',
       height: '3px',
-      backgroundColor: '#42a5f5',
+      backgroundColor: '#D63736',
     },
     paragraph: {
       fontSize: '16px',
