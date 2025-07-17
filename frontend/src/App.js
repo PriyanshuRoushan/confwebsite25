@@ -9,6 +9,7 @@ import CallForPaper from './components/callforpaper/call4Paper';
 import Footer from './components/footer/footer'
 import Registration from './components/registration/Registration';
 import Preparing from './components/preparing/preparing';
+import Acknowledgement from './components/acknowledgement/acknowledgement'
 
 
 function App() {
@@ -21,9 +22,9 @@ function App() {
       <Registration/> 
       <Preparing/>
       <Speakers/>
-
       <CallForPaper/>
       <Faculties />
+      <Acknowledgement/>
       <Footer/>
     </div>
   );
