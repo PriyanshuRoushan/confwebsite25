@@ -13,7 +13,8 @@ const CallForPaper = () => {
       color: 'white',
       textAlign: 'center',
       fontSize: '24px',
-      fontWeight: 600
+      fontWeight: 600,
+      scrollMarginTop:"100px"
     },
     container: {
       display: 'flex',
@@ -23,15 +24,18 @@ const CallForPaper = () => {
       boxSizing: 'border-box',
       background: 'linear-gradient(to right, #f3f6fd, #e6ecfb)',
       minHeight: '100vh',
-      fontFamily: "'Segoe UI', sans-serif"
+      fontFamily: "'Segoe UI', sans-serif", 
+      scrollMarginTop:"40px"
+     
     },
     leftPanel: {
       flex: 7,
       minWidth: '300px',
       backgroundColor: 'white',
       borderRadius: '12px',
-      boxShadow: '0 4px 10px rgba(0,0,0,0.05)',
-      padding: '30px'
+      // boxShadow: '0 4px 10px rgba(0,0,0,0.05)',
+      padding: '30px',
+      boxShadow: "rgba(0, 0, 0, 0.75) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;"
     },
     rightPanel: {
       flex: 3,
@@ -39,7 +43,7 @@ const CallForPaper = () => {
       backgroundColor: '#ffffff',
       borderRadius: '12px',
       padding: '30px',
-      boxShadow: '0 4px 10px rgba(0,0,0,0.05)',
+      boxShadow: 'rgba(0, 0, 0, 0.75) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center'
@@ -81,12 +85,12 @@ const CallForPaper = () => {
   };
 
   return (
-    <div id='call-for-paper'>
-      <header style={styles.header}>
+    <div >
+      <header style={styles.header} id='callforpaper'>
         2025 — Call for Paper
       </header>
 
-      <div style={styles.container}>
+      <div style={styles.container} >
         {/* Left Panel */}
         <div style={styles.leftPanel}>
           <h2 style={styles.heading}>Submission Rules</h2>
@@ -111,7 +115,7 @@ const CallForPaper = () => {
         </div>
 
         {/* Right Panel */}
-        <div style={styles.rightPanel}>
+        <div style={styles.rightPanel} className="shadow">
           <button style={styles.button} onClick={handleSubmit}>
             Submit Your Paper
           </button>

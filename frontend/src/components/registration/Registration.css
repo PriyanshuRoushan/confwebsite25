@@ -1,8 +1,9 @@
 .registration-section {
-  padding: 100px 80px;
+  padding: 20px 40px;
   background-color: #f9fafe;
   color: #1f2b46;
   font-family: "Segoe UI", sans-serif;
+  scroll-margin-top: 100px;
 }
 
 .reg-heading {
@@ -27,7 +28,8 @@
   font-size: 16px;
 }
 
-.reg-table th, .reg-table td {
+.reg-table th,
+.reg-table td {
   padding: 12px 16px;
   border: 1px solid #cfd9e4;
   text-align: center;
@@ -47,4 +49,35 @@
   color: #cc0000;
   text-align: center;
   font-size: 14px;
+}
+
+/* Account Details Section */
+.account-details {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(31, 75, 153, 0.1);
+}
+
+.account-heading {
+  text-align: center;
+  color: #d35400;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.account-table {
+  width: 100%;
+  font-size: 16px;
+  border-collapse: collapse;
+}
+
+.account-table td {
+  padding: 12px 16px;
+  border: 1px solid #cfd9e4;
+}
+
+.account-table tr:nth-child(even) {
+  background-color: #f9fafe;
 }

@@ -14,6 +14,7 @@
   align-items: flex-start;
   min-height: 20vh; /* Ensure enough space for bottom alignment */
   position: relative;
+  scroll-margin-top: 150px;
 }
 
 .hero-left {

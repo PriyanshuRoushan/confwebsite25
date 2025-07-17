@@ -3,8 +3,9 @@ import "./Registration.css";
 
 const Registration = () => {
   return (
-    <section className="registration-section">
+    <section className="registration-section" id="main-registration">
       <h2 className="reg-heading">🎓 Conference Registration</h2>
+
       <div className="reg-table-container">
         <table className="reg-table">
           <thead>
@@ -34,11 +35,41 @@ const Registration = () => {
             <tr><td>Tutorial only (Foreign Student)</td><td>$15</td><td>$30</td><td>$30</td><td>$50</td></tr>
           </tbody>
         </table>
+
         <p className="note">
           * All rates are inclusive of GST 18% <br />
           <strong>One full author registration can register up to 2 papers</strong> <br />
           Extra page charge: ₹1000/page (Indian) or $15/page (International)
         </p>
+      </div>
+
+      {/* Account Details Section */}
+      <div className="account-details">
+        <h3 className="account-heading">🏦 Account Details</h3>
+        <table className="account-table">
+          <tbody>
+            <tr>
+              <td><strong>Name of Account</strong></td>
+              <td>ROORKEE INSTITUTE OF TECHNOLOGY</td>
+            </tr>
+            <tr>
+              <td><strong>Account Number</strong></td>
+              <td>4044000100147399</td>
+            </tr>
+            <tr>
+              <td><strong>IFSC Code</strong></td>
+              <td>PUNB0404400</td>
+            </tr>
+            <tr>
+              <td><strong>Bank Name</strong></td>
+              <td>Punjab National Bank, IIT ROORKEE</td>
+            </tr>
+            <tr>
+              <td><strong>SWIFT Code</strong></td>
+              <td>PUNBINBB(Head Office)</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
   );
