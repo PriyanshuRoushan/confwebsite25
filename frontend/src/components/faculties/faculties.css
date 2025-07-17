@@ -175,3 +175,42 @@
     font-size: 1.8rem;
   }
 }
+.faculties-card {
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  margin: 10px;
+}
+
+.faculties-role {
+  font-size: 18px;
+  font-weight: bold;
+  color: #264087; /* Or your preferred highlight color */
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.faculties-image {
+  width: 145px;
+  height: 150px;
+  object-fit: fill;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.faculties-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.faculties-position {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.3;
+}
+
