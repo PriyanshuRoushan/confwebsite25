@@ -44,6 +44,7 @@ const Navbar = () => {
                 handleLinkClick('Home');
               }}>Home</a>
             </li>
+
             <li className={`nav-item ${activeLink === 'About' ? 'active' : ''}`}>
               <a href="#" onClick={(e) => {
                 e.preventDefault();
@@ -51,6 +52,7 @@ const Navbar = () => {
                 handleLinkClick('About');
               }}>About</a>
             </li>
+
             <li className={`nav-item ${activeLink === 'Call' ? 'active' : ''}`}>
               <a href="#callforpaper" onClick={(e) => {
                 e.preventDefault();
@@ -82,6 +84,7 @@ const Navbar = () => {
                 handleLinkClick('Tracks');
               }}>Tracks</a>
             </li>
+
           </ul>
         </div>
       </div>

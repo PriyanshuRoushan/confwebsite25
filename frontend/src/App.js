@@ -7,6 +7,7 @@ import Faculties from './components/faculties/faculties';
 import Tracks from './components/tracks/tracks';
 import CallForPaper from './components/callforpaper/call4Paper';
 import Footer from './components/footer/footer'
+import Registration from './components/registration/Registration';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <AboutRit/>
       <Tracks />
       <Speakers/>
+      <Registration/> 
       <CallForPaper/>
       <Faculties />
       <Footer/>

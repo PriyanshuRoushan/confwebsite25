@@ -69,7 +69,7 @@ const ConferenceFooter = () => {
       left: 0,
       width: '35px',
       height: '3px',
-      backgroundColor: '#42a5f5',
+      backgroundColor: '#D63736',
     },
     paragraph: {
       fontSize: '16px',

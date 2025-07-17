@@ -175,3 +175,9 @@
     font-size: 1.8rem;
   }
 }
+.faculties-role-heading {
+  font-size: 1.8rem;         /* Increased font size */
+  margin-bottom: 1.5rem;
+  color: #264087;            /* Updated color */
+}
+
