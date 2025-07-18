@@ -23,7 +23,7 @@ const Hero = () => {
           <h1 className="hero-title">International Conference on Emerging Technologies in Applied Engineering and Computational Intelligence <br />(ICETAPCI-2025)</h1>
           <h2 className="hero-subtitle">2nd International Conference</h2>
           
-          <CountdownDaysOnly deadline="2025-09-10" />
+          <CountdownDaysOnly deadline="2025-09-10" className="home-countdown" />
         
         </div>
         <div className="hero-right">

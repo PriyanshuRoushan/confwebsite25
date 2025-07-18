@@ -27,7 +27,6 @@ function App() {
       <CallForPaper/>
       <Registration/> 
       <Preparing/>
-      <hr></hr>
       <Faculties />
       <Tourist />
       <Acknowledgement/>
