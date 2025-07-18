@@ -9,7 +9,7 @@ const ConferenceFooter = () => {
   const coordinators = [
         {
       name: 'Ashwani Raj',
-      linkedin: 'www.linkedin.com/in/ashwani-raj-57480028a',
+      linkedin: 'https://www.linkedin.com/in/ashwani-raj-57480028a',
       instagram: '#',
       gmail: 'ashwaniraj084@gmail.com'
     },
