@@ -188,12 +188,13 @@ const ConferenceFooter = () => {
             </div>
           ))}
         </div>
-
+                                                                                                             
         {/* Column 4 - Contact + Map */}
         <div style={styles.column}>
           <h3 style={styles.heading}>Contact & Connect<div style={styles.headingLine}></div></h3>
-          <div style={styles.contactInfo}><FaEnvelope style={styles.icon} /><a href="mailto:icetapci.2025@ritroorkee.com" style={styles.link}>icetapci.2025@ritroorkee.com</a></div>
-          <div style={styles.contactInfo}><FaPhoneAlt style={styles.icon} /><span style={styles.paragraph}>+91-1332-355555</span></div>
+          <div style={styles.contactInfo}><FaEnvelope style={styles.icon} /><p><a href="mailto:icetapci.2025@ritroorkee.com" style={styles.link}>icetapci.2025@ritroorkee.com</a>,<br></br>
+          <a href="mailto:dr.paragjain@ritroorkee.com" style={styles.link}>dr.paragjain@ritroorkee.com</a></p></div>
+          <div style={styles.contactInfo}><FaPhoneAlt style={styles.icon} /><span style={styles.paragraph}><p>+91 9837386973<br></br>+91 7417093980</p></span></div>
           <div style={styles.contactInfo}><FaGlobe style={styles.icon} /><a href="https://ritroorkee.com" style={styles.link} target="_blank" rel="noopener noreferrer">ritroorkee.com</a></div>
    
           <div style={{ marginTop: '20px' }}>

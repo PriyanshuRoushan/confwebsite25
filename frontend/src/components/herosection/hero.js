@@ -29,7 +29,7 @@ const Hero = () => {
         <div className="hero-right">
           <div className="hero-cta">
             <a href="/submit-abstract" className="cta-button">
-              SUBMIT YOUR ABSTRACT <span className="arrow">→</span>
+              SUBMIT YOUR FULL LENGTH PAPER <span className="arrow">→</span>
             </a>
             <a href="/register" className="cta-button">
               REGISTER NOW <span className="arrow">→</span>

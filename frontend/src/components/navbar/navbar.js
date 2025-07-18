@@ -34,10 +34,7 @@ const Navbar = () => {
   return (
     <nav className="navbar" ref={navbarRef}>
       <div className="navbar-container">
-        <div className="navbar-waiver-banner">
-          icetapci.2025@ritroorkee.com
-          <a href="/register" className="waiver-link">Submit Your Application Today!</a>
-        </div>
+       
 
         <div className="navbar-main">
           {/* Mobile Menu Icon */}
