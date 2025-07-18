@@ -1,57 +1,19 @@
 /* eslint-disable */
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import './navbar.css';
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState('Home');
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const navbarRef = useRef(null);
 
   const handleLinkClick = (linkName) => {
     setActiveLink(linkName);
-    setIsMobileMenuOpen(false); // Close menu after clicking
   };
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (isMobileMenuOpen && navbarRef.current && !navbarRef.current.contains(event.target)) {
-        setIsMobileMenuOpen(false);
-      }
-    };
-
-    // Add when mounted
-    document.addEventListener('mousedown', handleClickOutside);
-    // For touch devices
-    document.addEventListener('touchstart', handleClickOutside);
-
-    // Return cleanup function to be called when unmounted
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-      document.removeEventListener('touchstart', handleClickOutside);
-    };
-  }, [isMobileMenuOpen]);
-
   return (
-    <nav className="navbar" ref={navbarRef}>
+    <nav className="navbar">
       <div className="navbar-container">
-       
-
         <div className="navbar-main">
-          {/* Mobile Menu Icon */}
-          <div className="mobile-menu-icon" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-            {isMobileMenuOpen ? (
-              <span className="close-icon">✖</span>
-            ) : (
-              <>
-                <span className="bar"></span>
-                <span className="bar"></span>
-                <span className="bar"></span>
-              </>
-            )}
-          </div>
-
-          {/* Navigation Menu */}
-          <ul className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
+          <ul className="nav-menu">
             <li className={`nav-item ${activeLink === 'Home' ? 'active' : ''}`}>
               <a href="#hero" onClick={(e) => {
                 e.preventDefault();
@@ -61,26 +23,29 @@ const Navbar = () => {
             </li>
 
             <li className={`nav-item ${activeLink === 'About' ? 'active' : ''}`}>
-              <a href="#" onClick={(e) => {
+              <a href="#about-rit" onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('about-rit')?.scrollIntoView({ behavior: 'smooth' });
                 handleLinkClick('About');
               }}>About</a>
             </li>
+
             <li className={`nav-item ${activeLink === 'Speakers' ? 'active' : ''}`}>
-              <a href="#" onClick={(e) => {
+              <a href="#speakers" onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('speakers')?.scrollIntoView({ behavior: 'smooth' });
                 handleLinkClick('Speakers');
               }}>Speakers</a>
             </li>
+
             <li className={`nav-item ${activeLink === 'Tracks' ? 'active' : ''}`}>
-              <a href="#" onClick={(e) => {
+              <a href="#main-tracks" onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('main-tracks')?.scrollIntoView({ behavior: 'smooth' });
                 handleLinkClick('Tracks');
               }}>Tracks</a>
             </li>
+
             <li className={`nav-item ${activeLink === 'Call' ? 'active' : ''}`}>
               <a href="#callforpaper" onClick={(e) => {
                 e.preventDefault();
@@ -88,8 +53,9 @@ const Navbar = () => {
                 handleLinkClick('Call');
               }}>Call for Paper</a>
             </li>
+
             <li className={`nav-item ${activeLink === 'Registration' ? 'active' : ''}`}>
-              <a href="#" onClick={(e) => {
+              <a href="#main-registration" onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('main-registration')?.scrollIntoView({ behavior: 'smooth' });
                 handleLinkClick('Registration');
@@ -97,12 +63,9 @@ const Navbar = () => {
             </li>
 
             <li className={`nav-item ${activeLink === 'Committee' ? 'active' : ''}`}>
-              <a href="#" onClick={(e) => {
+              <a href="#committee" onClick={(e) => {
                 e.preventDefault();
-                document.getElementById('committee')?.scrollIntoView({
-                  behavior: 'smooth',
-                  block: "start"
-                });
+                document.getElementById('committee')?.scrollIntoView({ behavior: 'smooth', block: "start" });
                 handleLinkClick('Committee');
               }}>Committee</a>
             </li>
